@@ -12,8 +12,29 @@ body {
 }
 
 main {
-  max-width: 1000px;
+  max-width: 1300px;
   margin: auto;
+}
+
+.imagem-carrossel {
+  margin-top: 50px;
+  object-position: 0 5%;
+  object-fit: cover;
+  height: 500px;
+}
+
+.imagem-card-grid {
+  object-fit: cover;
+  object-position: 40% 50%;
+  height: 300px;
+}
+
+footer {
+  background-color: #59159e !important;
+}
+
+.paragrafo-copy {
+  border-top: 1px solid gray;
 }
 
 /*# sourceMappingURL=indexStyle.css.map */
