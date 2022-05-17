@@ -1,7 +1,13 @@
-header{
-    width:100%;
+@import '../sass/_custom_colors.scss';
+
+*{
+    color:$font-color !important;
+    font-family: 'Mulish', sans-serif;
 }
 
-header .nav-center{
-    justify-content:center;
+header{
+    background-color: $primary-color !important;
+}
+body{
+    background-color: $background-theme !important;
 }
