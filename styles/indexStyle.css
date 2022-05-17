@@ -1,9 +1,14 @@
-header {
-  width: 100%;
+* {
+  color: #0bd681 !important;
+  font-family: "Mulish", sans-serif;
 }
 
-header .nav-center {
-  justify-content: center;
+header {
+  background-color: #59159e !important;
+}
+
+body {
+  background-color: #1D1839 !important;
 }
 
 /*# sourceMappingURL=indexStyle.css.map */
