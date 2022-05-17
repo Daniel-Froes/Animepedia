@@ -3,6 +3,7 @@
 *{
     color:$font-color !important;
     font-family: 'Mulish', sans-serif;
+    
 }
 
 header{
@@ -10,4 +11,8 @@ header{
 }
 body{
     background-color: $background-theme !important;
+}
+main{
+    max-width: 1000px;
+    margin: auto;
 }

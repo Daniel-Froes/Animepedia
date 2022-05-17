@@ -11,4 +11,9 @@ body {
   background-color: #1D1839 !important;
 }
 
+main {
+  max-width: 1000px;
+  margin: auto;
+}
+
 /*# sourceMappingURL=indexStyle.css.map */
