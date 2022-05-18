@@ -23,6 +23,10 @@ header {
   border-radius: 50%;
 }
 
+.img-nav {
+  object-fit: cover;
+}
+
 main {
   max-width: 1300px;
   margin: auto;
