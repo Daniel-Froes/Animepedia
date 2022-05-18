@@ -13,7 +13,7 @@
 }
 
 body {
-  background-color: #1D1839 !important;
+  background-color: #1d1839 !important;
 }
 
 header {
@@ -34,21 +34,13 @@ header {
 }
 
 main {
-  max-width: 1300px;
+  height: 657px;
+  max-width: 500px;
   margin: auto;
 }
 
-.imagem-carrossel {
-  margin-top: 50px;
-  object-position: 0 5%;
-  object-fit: cover;
-  height: 500px;
-}
-
-.imagem-card-grid {
-  object-fit: cover;
-  object-position: 40% 50%;
-  height: 300px;
+.login-form {
+  justify-content: center;
 }
 
 footer {
