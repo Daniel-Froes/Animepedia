@@ -1,4 +1,8 @@
 @import "../sass/_custom_colors.scss";
+@font-face {
+  font-family: Itacha;
+  src: url("../src/Fonts/itacha.ttf");
+}
 
 * {
   margin: 0;
@@ -25,6 +29,13 @@ header {
   width: 50px;
   border-radius: 50%;
 }
+
+.img-nav{
+  font-size: 50px;
+  font-family: Itacha;
+  object-fit: cover;
+}
+
 
 main {
   height: 505px;
