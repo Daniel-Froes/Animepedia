@@ -1,14 +1,24 @@
 * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   color: #0bd681 !important;
   font-family: "Mulish", sans-serif;
+}
+
+body {
+  background-color: #1D1839 !important;
 }
 
 header {
   background-color: #59159e !important;
 }
 
-body {
-  background-color: #1D1839 !important;
+.imagem-login {
+  object-fit: cover;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
 }
 
 main {
