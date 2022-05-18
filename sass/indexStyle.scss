@@ -6,6 +6,9 @@
     box-sizing: border-box;
     color:$font-color !important;
     font-family: 'Mulish', sans-serif;
+    list-style: none;
+    text-decoration: none !important;
+
 
 }
 body{
@@ -13,7 +16,8 @@ body{
 }
 header{
     background-color: $primary-color !important;
-    
+
+
 }
 
 .imagem-login{
