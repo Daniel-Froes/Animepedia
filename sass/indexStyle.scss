@@ -1,19 +1,27 @@
 @import '../sass/_custom_colors.scss';
 
 *{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
     color:$font-color !important;
     font-family: 'Mulish', sans-serif;
-    
-}
 
-header{
-    background-color: $primary-color !important;
-    
 }
 body{
     background-color: $background-theme !important;
 }
+header{
+    background-color: $primary-color !important;
+    
+}
 
+.imagem-login{
+    object-fit: cover;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
 main{
     max-width: 1300px;
     margin: auto;
