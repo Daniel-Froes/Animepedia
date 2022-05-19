@@ -34,7 +34,7 @@ header {
 }
 
 main {
-  max-width: 1300px;
+  max-width: 1500px;
   margin: auto;
 }
 
@@ -46,6 +46,10 @@ main {
 
 .card-fundo {
   background-color: #1D1839 !important;
+}
+
+.tamanhop-texto {
+  width: 100%;
 }
 
 footer {
