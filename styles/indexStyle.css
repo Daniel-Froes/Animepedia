@@ -60,6 +60,11 @@ main {
   height: 300px;
 }
 
+.imagem-card-slide {
+  object-fit: cover;
+  height: 300px;
+}
+
 footer {
   background-color: #59159e !important;
 }

@@ -50,11 +50,17 @@ main {
   object-fit: cover;
   height: 500px;
 }
+
 .imagem-card-grid {
   object-fit: cover;
   object-position: 40% 50%;
   height: 300px;
 }
+.imagem-card-slide {
+  object-fit: cover;
+  height: 300px;
+}
+
 footer {
   background-color: $primary-color !important;
 }
