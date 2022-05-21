@@ -21,10 +21,10 @@ new Glider(document.querySelector('.glider'), {
       },{
         breakpoint: 1024,
         settings: {
-          slidesToShow: 3.5,
+          slidesToShow: 5,
           slidesToScroll: 1,
           itemWidth: 150,
-          duration: 0.8
+          duration: 0.25
         }
       }
     ]

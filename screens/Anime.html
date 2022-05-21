@@ -117,14 +117,76 @@
       </div>
     </section>
 
-    <section>
+    <section class="comentario-secao">
       <div class="form-floating">
-        <textarea class="form-control review-color" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
-        <label for="floatingTextarea2">Comments</label>
+        <textarea class="form-control review-color" id="floatingTextarea2" style="height: 200px"></textarea>
+        <label for="floatingTextarea2">Comentários</label>
+        <div class="d-grid gap-2">
+          <button class="btn my-4" type="button">Adicionar comentário</button>
+          </div>
       </div>
+      <div class="my-5">
+        <div class="card my-5 review-color">
+          <div class="card-body">
+            Lorem ipsum dolor sit amet.
+          </div>
+        </div>
+        <div class="card my-5 review-color">
+          <div class="card-body">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam, repudiandae?
+          </div>
+        </div>
+        <div class="card my-5 review-color">
+          <div class="card-body">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi ab culpa officiis voluptatibus ut esse?
+          </div>
+        </div>
+      </div>
+      
     </section>
     <section>
+      <h3 class="my-5 mx-4">Você tambem pode gostar</h3>
+      <div class="glider-contain">
+        <button class="glider-prev"><i class="fa fa-chevron-left"></i></button>
+        <div class="glider">
+          <img src="../src/img/shinobu.jpg" class="img-fluid imagem-card-slide" alt="...">
+          
 
+          <div class="card" >
+            <img src="../src/img/kitagawamarin.png" class="card-img-top imagem-card-slide" alt="...">
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+          <div class="card" >
+            <img src="../src/img/kizumimonogatari.jpg" class="card-img-top imagem-card-slide" alt="...">
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="../src/img/chainsawman.jpg" class="card-img-top imagem-card-slide" alt="...">
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="../src/img/officialtrailer.jpg" class="card-img-top imagem-card-slide" alt="...">
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="../src/img/nagatorotrailer.jpg" class="card-img-top imagem-card-slide" alt="...">
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+
+        </div>
+        <button class="glider-next"><i class="fa fa-chevron-right"></i></button>
+        <div id="dots" class="glider-dots"></div>
+      </div>
     </section>
   </main>
 
@@ -146,7 +208,7 @@
     <p class="text-center paragrafo-copy py-4 my-4">© 2022 Animepedia Inc</p>
   </footer>
 
-
+  <script type="text/javascript" src="../js/glider.min.js"></script>
   <script type="text/javascript" src="../js/anime-recomendacoes.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
     integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
