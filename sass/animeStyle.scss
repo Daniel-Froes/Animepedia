@@ -53,8 +53,14 @@ main{
 
     background-color: $background-theme!important;
 }
-.tamanhop-texto{
-    width: 100%;
+.tamanho-texto{
+    width: 80%;
+}
+.review-color{
+    background-color: $form-color !important;
+}
+.container-tamanho{
+    margin-top: 9%;
 }
 
 footer{

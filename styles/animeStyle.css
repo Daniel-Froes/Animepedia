@@ -48,8 +48,16 @@ main {
   background-color: #1D1839 !important;
 }
 
-.tamanhop-texto {
-  width: 100%;
+.tamanho-texto {
+  width: 80%;
+}
+
+.review-color {
+  background-color: #2e0344 !important;
+}
+
+.container-tamanho {
+  margin-top: 9%;
 }
 
 footer {

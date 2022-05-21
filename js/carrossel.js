@@ -4,6 +4,7 @@ new Glider(document.querySelector('.glider'), {
   scrollLock: true,
   dots: '#dots',
   rewind:true,
+  draggable:true,
   arrows: {
     prev: '.glider-prev',
     next: '.glider-next'
@@ -20,7 +21,7 @@ new Glider(document.querySelector('.glider'), {
     },{
       breakpoint: 1024,
       settings: {
-        slidesToShow: 1.5,
+        slidesToShow: 3.5,
         slidesToScroll: 1,
         itemWidth: 150,
         duration: 0.8
