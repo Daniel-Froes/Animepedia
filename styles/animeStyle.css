@@ -17,6 +17,7 @@ body {
 }
 
 header {
+  font-size: 18px;
   background-color: #59159e !important;
 }
 
@@ -56,8 +57,9 @@ main {
   background-color: #2e0344 !important;
 }
 
-.container-tamanho {
-  margin-top: 9%;
+.imagem-card-slide {
+  object-fit: cover;
+  height: 200px;
 }
 
 footer {
