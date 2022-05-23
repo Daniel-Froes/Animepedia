@@ -46,8 +46,17 @@ main{
 .imagem-card-slide {
     object-fit: cover;
     height: 300px;
-  }
+}
 
+.card-grid-categoria{
+    width: 200px;
+    height: 350px;
+
+}
+.card-imagem-categoria{
+    object-fit: cover;
+    height: 150px;
+}
 footer{
     background-color: $primary-color !important;
 }
