@@ -40,17 +40,11 @@ main {
 
 .imagem-card-slide {
   object-fit: cover;
-  height: 300px;
+  height: 250px;
 }
 
-.card-grid-categoria {
-  width: 200px;
-  height: 350px;
-}
-
-.card-imagem-categoria {
-  object-fit: cover;
-  height: 150px;
+.card-grid-categorias {
+  background-color: #1D1839;
 }
 
 footer {
