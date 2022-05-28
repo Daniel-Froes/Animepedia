@@ -1,73 +1,58 @@
 @font-face {
   font-family: Itacha;
-  src: url("../src/Fonts/itacha.ttf");
-}
+  src: url("../src/Fonts/itacha.ttf"); }
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   color: #0bd681 !important;
-  font-family: "Mulish", sans-serif;
+  font-family: 'Mulish', sans-serif;
   list-style: none;
-  text-decoration: none !important;
-}
+  text-decoration: none !important; }
 
 body {
-  background-color: #1D1839 !important;
-}
+  background-color: #1D1839 !important; }
 
 header {
   font-size: 18px;
-  background-color: #59159e !important;
-}
+  background-color: #59159e !important; }
 
 .imagem-login {
   object-fit: cover;
   height: 50px;
   width: 50px;
-  border-radius: 50%;
-}
+  border-radius: 50%; }
 
 .img-nav {
   font-size: 50px;
   font-family: Itacha;
-  object-fit: cover;
-}
+  object-fit: cover; }
 
 main {
   max-width: 1500px;
-  margin: auto;
-}
+  margin: auto; }
 
 .card-anime {
   margin-top: 50px;
   background-color: #1D1839 !important;
-  border: none;
-}
+  border: none; }
 
 .card-fundo {
-  background-color: #1D1839 !important;
-}
+  background-color: #1D1839 !important; }
 
 .tamanho-texto {
-  width: 80%;
-}
+  width: 80%; }
 
 .review-color {
-  background-color: #2e0344 !important;
-}
+  background-color: #2e0344 !important; }
 
 .imagem-card-slide {
   object-fit: cover;
-  height: 200px;
-}
+  height: 200px; }
 
 footer {
-  background-color: #59159e !important;
-}
+  background-color: #59159e !important; }
 
 .paragrafo-copy {
-  border-top: 1px solid gray;
-}
-
-/*# sourceMappingURL=animeStyle.css.map */
+  border-top: 1px solid gray; }
