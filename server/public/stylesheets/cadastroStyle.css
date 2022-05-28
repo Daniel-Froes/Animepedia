@@ -1,7 +1,7 @@
 @font-face {
   font-family: Itacha;
-  src: url("../src/Fonts/itacha.ttf");
-}
+  src: url("../src/Fonts/itacha.ttf"); }
+
 * {
   margin: 0;
   padding: 0;
@@ -9,46 +9,35 @@
   color: #0bd681 !important;
   font-family: "Mulish", sans-serif;
   list-style: none;
-  text-decoration: none !important;
-}
+  text-decoration: none !important; }
 
 body {
-  background-color: #1d1839 !important;
-}
+  background-color: #1d1839 !important; }
 
 header {
-  background-color: #59159e !important;
-}
+  background-color: #59159e !important; }
 
 .imagem-login {
   object-fit: cover;
   height: 50px;
   width: 50px;
-  border-radius: 50%;
-}
+  border-radius: 50%; }
 
 .img-nav {
   font-size: 50px;
   font-family: Itacha;
-  object-fit: cover;
-}
+  object-fit: cover; }
 
 main {
   height: 657px;
   max-width: 500px;
-  margin: auto;
-}
+  margin: auto; }
 
 .login-form {
-  justify-content: center;
-}
+  justify-content: center; }
 
 footer {
-  background-color: #59159e !important;
-}
+  background-color: #59159e !important; }
 
 .paragrafo-copy {
-  border-top: 1px solid gray;
-}
-
-/*# sourceMappingURL=cadastroStyle.css.map */
+  border-top: 1px solid gray; }
