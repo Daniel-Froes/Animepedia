@@ -1,0 +1,3 @@
+# Animepedia
+
+-LEMBRAR DE FAZER BOTAO DE REVIEW SUMIR.
