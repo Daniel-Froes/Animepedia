@@ -1,0 +1,75 @@
+@import '../sass/_custom_colors.scss';
+@font-face {
+    font-family: Itacha;
+    src: url("../fonts/Itacha.ttf");
+}
+
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    color:$font-color !important;
+    font-family: 'Mulish', sans-serif;
+    list-style: none;
+    text-decoration: none !important;
+
+
+}
+body{
+    background-color: $background-theme !important;
+}
+header{
+    font-size: 18px;
+    background-color: $primary-color !important;
+
+
+}
+
+.imagem-login {
+    object-fit: cover;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+.img-nav{
+    font-size: 50px;
+    font-family: Itacha;
+    object-fit: cover;
+}
+
+main{
+    max-width: 1500px;
+    margin: auto;
+    
+}
+
+.card-anime {
+    margin-top: 50px;
+    background-color: $background-theme!important;
+    border:none;
+   
+}
+
+.card-fundo{
+
+    background-color: $background-theme!important;
+}
+.tamanho-texto{
+    width: 80%;
+}
+.review-color{
+    background-color: $form-color !important;
+}
+.imagem-card-slide {
+    object-fit: cover;
+    height: 200px;
+  }
+
+footer{
+    background-color: $primary-color !important;
+}
+.paragrafo-copy{
+    border-top:1px solid gray;
+}
+
