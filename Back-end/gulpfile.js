@@ -9,11 +9,11 @@ compileSass.compiler = require('node-sass')
 const bundleSass = () => {
     return src('./public/sass/**/*.scss')
     .pipe(sourceMaps.init())
-        .pipe(compileSass().on('error', compileSass.logError))
-        .pipe(minifyCss())
-        .pipe(sourceMaps.write())
-        .pipe(concat('bundle.css'))
-        .pipe(dest('./public/stylesheets'))
+    .pipe(compileSass().on('error', compileSass.logError))
+    .pipe(minifyCss())
+    .pipe(sourceMaps.write())
+    .pipe(concat('bundle.css'))
+    .pipe(dest('./public/stylesheets'))
 }
 
 const devWatch = () =>{
