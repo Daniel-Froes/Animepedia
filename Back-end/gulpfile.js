@@ -12,6 +12,7 @@ const bundleSass = () => {
     .pipe(compileSass().on('error', compileSass.logError))
     .pipe(minifyCss())
     .pipe(sourceMaps.write())
+    .pipe(concat('bundle.css'))
     .pipe(dest('./public/stylesheets'))
 }
 
