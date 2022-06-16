@@ -1,0 +1,28 @@
+<%- include('partials/head') %>
+<%- include('partials/head') %> <%- include('partials/headerAdmin') %>
+
+<main>
+    <section>
+        <div class="mb-3 mt-5">
+            <label for="exampleFormControlInput1" class="form-label">Título</label>
+            <input type="email" class="form-control form-control-lg" id="exampleFormControlInput1" placeholder="">
+        </div>
+        <div class="mb-3 mt-3">
+            <label for="exampleFormControlInput1" class="form-label">Categoria</label>
+            <input type="email" class="form-control form-control-lg" id="exampleFormControlInput1" placeholder="">
+        </div>
+        <div class="mb-3 mt-3">
+            <label for="formFileMultiple" class="form-label">Adicionar imagem</label>
+            <input class="form-control" type="file" id="formFileMultiple" multiple>
+        </div>
+        <div class="mb-3 mt-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Artigo</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+        </div>
+        <div class="col-12 mb-5">
+            <button type="submit" class="btn btn-outline-light">Enviar</button>
+          </div>
+    </section>
+</main>
+
+<%- include('partials/footer') %>
