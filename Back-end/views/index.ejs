@@ -1,11 +1,185 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
-</html>
+<%- include('partials/head') %>
+
+<%- include('partials/header') %>
+
+
+<main>
+  <section>
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+          aria-label="Slide 4"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="/images/thumb-haikyu.jpg" class="d-block w-100 imagem-carrossel" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="/images/thumb-pnv.png" class="d-block w-100 imagem-carrossel" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="/images/thumb-snk.png" class="d-block w-100 imagem-carrossel" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="/images/thumb-spy.png" class="d-block w-100 imagem-carrossel" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+
+  <section class="grid-cards-container">
+    <h2 class="text-center mt-5 fw-bold">Lançamentos</h2>
+    <div class="row row-cols-1 row-cols-md-3 my-5 mx-5">
+      <div class="col my-3">
+        <div class="card h-100">
+          <img src="../src/img/chainsawman.jpg" class="card-img-top imagem-card-grid" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint sequi numquam tempora non vero inventore?
+            </p>
+          </div>
+          <div class="card-footer bg-transparent border-success mx-auto card-reacoes">
+            <button><i class="fa-solid fa-heart fa-xl"></i></button>
+            <button><i class="fa-solid fa-thumbs-down fa-xl"></i></button>
+            <button><i class="fa-solid fa-face-sad-cry fa-xl"></i></button>
+            <button><i class="fa-solid fa-face-meh-blank fa-xl"></i></button>
+            <button><i class="fa-solid fa-face-grin-squint-tears fa-xl"></i></button>
+            <button><i class="fa-solid fa-share fa-xl"></i></button>
+          </div>
+        </div>
+      </div>
+      <div class="col my-3">
+        <div class="card h-100">
+          <img src="../src/img/kizumonogatari1.jpg" class="card-img-top imagem-card-grid" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
+            <p class="card-text">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil nemo tempore error sit distinctio
+              quaerat.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col my-3">
+        <div class="card h-100">
+          <img src="../src/img/shinobu.jpg" class="card-img-top imagem-card-grid" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia ipsum corrupti fugit inventore
+              exercitationem eius?
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h2 class="text-center mt-5 fw-bold">Destaques</h2>
+    <div class="row row-cols-1 row-cols-md-3 my-5 mx-5">
+      <div class="col my-3">
+        <div class="card h-100">
+          <img src="../src/img/fujiwara.jpg" class="card-img-top imagem-card-grid" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              This is a longer card with supporting text below as a natural
+              lead-in to additional content. This content is a little bit
+              longer.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col my-3">
+        <div class="card h-100">
+          <img src="../src/img/kaguyasamatemp3.jpg" class="card-img-top imagem-card-grid" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              This is a longer card with supporting text below as a natural
+              lead-in to additional content. This content is a little bit
+              longer.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col my-3">
+        <div class="card h-100">
+          <img src="../src/img/kitagawamarin.png" class="card-img-top imagem-card-grid" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              This is a longer card with supporting text below as a natural
+              lead-in to additional content.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h2 class="text-center mt-5 fw-bold">Ultimas postagens</h2>
+    <section>
+      <div class="glider-contain">
+        <button class="glider-prev"><i class="fa fa-chevron-left"></i></button>
+        <div class="glider">
+
+          <div class="card">
+            <img src="../src/img/kaguyasamatemp3.jpg" class="card-img-top imagem-card-slide" alt="...">
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="../src/img/kitagawamarin.png" class="card-img-top imagem-card-slide" alt="...">
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="../src/img/kizumimonogatari.jpg" class="card-img-top imagem-card-slide" alt="...">
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="../src/img/chainsawman.jpg" class="card-img-top imagem-card-slide" alt="...">
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="../src/img/officialtrailer.jpg" class="card-img-top imagem-card-slide" alt="...">
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="/images/nagatorotrailer.jpg" class="card-img-top imagem-card-slide" alt="...">
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+
+        </div>
+        <button class="glider-next"><i class="fa fa-chevron-right"></i></button>
+        <div id="dots" class="glider-dots"></div>
+      </div>
+    </section>
+
+</main>
+
+<%- include('partials/footer') %>

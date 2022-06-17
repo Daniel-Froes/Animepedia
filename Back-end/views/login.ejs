@@ -1,0 +1,33 @@
+<%- include('partials/head') %>
+
+<%- include('partials/header') %>
+
+<main>
+    <section>
+        <form class="mt-5 mb-5">
+            <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">Email</label>
+                <div id="emailHelp" class="form-text">Nunca compartilharemos seu e-mail com mais ninguém.</div>
+              </div>
+              <div class="form-floating">
+                <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                <label for="floatingPassword">Senha</label>
+              </div>
+            <div>
+                <a class="d-flex my-1" href="./cadastro.html">Não possui uma conta? Registre-se</a>
+                <a href="#">Esqueci minha senha</a>
+            </div>
+            <div class="mb-3 form-check"></div>
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1 ">Lembrar Senha</label>
+            </div>
+            <div class="d-grid gap-2 col-6 mx-auto">
+                <button type="submit" class="btn">Entrar</button>
+                
+            </div>
+          </form>
+    </section>
+</main>
+
+<%- include('partials/footer') %>
