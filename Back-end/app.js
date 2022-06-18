@@ -10,6 +10,7 @@ var categoriasRouter = require('./routes/categorias');
 var adminRouter = require('./routes/admin');
 var loginRouter = require('./routes/login');
 var cadastroRouter = require('./routes/cadastro');
+var editarPerfilRouter = require('./routes/editarPerfil');
 
 
 
@@ -25,12 +26,14 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/home', indexRouter);
+app.use('/', indexRouter);
 app.use('/users', usersRouter);
+app.use('/categorias', categoriasRouter);
 app.use('/categorias', categoriasRouter);
 app.use('/admin', adminRouter);
 app.use('/login', loginRouter);
 app.use('/cadastro', cadastroRouter);
+app.use('/editar', editarPerfilRouter);
 
 
 
