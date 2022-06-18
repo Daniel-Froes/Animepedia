@@ -8,12 +8,9 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var categoriasRouter = require('./routes/categorias');
 var adminRouter = require('./routes/admin');
-var criarPostRouter = require('./routes/criarPost');
 var loginRouter = require('./routes/login');
 var cadastroRouter = require('./routes/cadastro');
-var aprovarRouter = require('./routes/aprovar');
-var usuariosRouter = require('./routes/usuarios');
-var vipsRouter = require('./routes/vips');
+
 
 
 var app = express();
@@ -32,12 +29,8 @@ app.use('/home', indexRouter);
 app.use('/users', usersRouter);
 app.use('/categorias', categoriasRouter);
 app.use('/admin', adminRouter);
-app.use('/criarPost', criarPostRouter);
 app.use('/login', loginRouter);
 app.use('/cadastro', cadastroRouter);
-app.use('/aprovar', aprovarRouter);
-app.use('/usuarios', usuariosRouter);
-app.use('/vips', vipsRouter);
 
 
 
