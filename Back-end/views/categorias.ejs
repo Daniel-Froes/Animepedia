@@ -1,0 +1,25 @@
+<%- include('partials/head') %>
+
+<%- include('partials/header') %>
+
+
+<main>
+    <section>
+      <h2 class="text-center  mt-5 fw-bold">Ação</h2>
+    </section>
+    <section class="m-5">
+      <h2 class="text-start fs-4 mt-5">Populares</h2>
+      <%- include('partials/sliderCategory') %>
+
+      <div id="glider-2" class="glider-contain">
+        <h2 class="text-start fs-4 mt-5">Lançamentos</h2>
+        <%- include('partials/sliderCategory') %>
+
+      <div id="glider-3" class="glider-contain">
+        <h2 class="text-start fs-4 mt-5">Já que voce viu...</h2>
+        <%- include('partials/sliderCategory') %>
+    </section>
+
+  </main>
+
+<%- include('partials/footer') %>

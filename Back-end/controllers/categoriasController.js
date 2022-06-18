@@ -1,5 +1,5 @@
 const controller = {
-    index: (req, res) => res.render('categoria'),
+    index: (req, res) => res.render('categorias'),
     show:  (req, res) => res.render('post')
 }
 
