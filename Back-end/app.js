@@ -14,6 +14,7 @@ var cadastroRouter = require('./routes/cadastro');
 var aprovarRouter = require('./routes/aprovar');
 var usuariosRouter = require('./routes/usuarios');
 var vipsRouter = require('./routes/vips');
+var editarPerfilRouter = require('./routes/editarPerfil');
 
 
 var app = express();
@@ -28,8 +29,9 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/home', indexRouter);
+app.use('/', indexRouter);
 app.use('/users', usersRouter);
+app.use('/categorias', categoriasRouter);
 app.use('/categorias', categoriasRouter);
 app.use('/admin', adminRouter);
 app.use('/criarPost', criarPostRouter);
@@ -38,6 +40,7 @@ app.use('/cadastro', cadastroRouter);
 app.use('/aprovar', aprovarRouter);
 app.use('/usuarios', usuariosRouter);
 app.use('/vips', vipsRouter);
+app.use('/editar', editarPerfilRouter);
 
 
 
