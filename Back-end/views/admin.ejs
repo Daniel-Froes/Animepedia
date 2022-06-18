@@ -1,5 +1,5 @@
-<%- include('partials/head') %>
-<%- include('partials/head') %> <%- include('partials/headerAdmin') %>
+<%- include('partials/head') %> <%- include('partials/head') %> <%-
+include('partials/headerAdmin') %>
 
 <main>
   <section>
@@ -9,37 +9,40 @@
 
   <section>
     <div class="card">
-        <div class="card-body">
-            Criar um Post
-            <a class="btn btn-outline-secondary " href="#" role="button">Link</a>
-        </div>
+      <div class="card-body">
+        Criar um Post
+        <a class="btn btn-outline-secondary" href="/criarPost" role="button"
+          >Link</a
+        >
       </div>
+    </div>
   </section>
   <section>
     <div class="card">
-        <div class="card-body">
-            Criar um Post
-            <a class="btn btn-outline-secondary " href="#" role="button">Link</a>
-        </div>
+      <div class="card-body">
+        Aprovar solicitações de posts
+        <a class="btn btn-outline-secondary" href="/admin/aprovar" role="button"
+          >Link</a
+        >
       </div>
+    </div>
   </section>
   <section>
     <div class="card">
-        <div class="card-body">
-            Criar um Post
-            <a class="btn btn-outline-secondary " href="#" role="button">Link</a>
-        </div>
+      <div class="card-body">
+        Ver lista de usuários
+        <a class="btn btn-outline-secondary" href="/admin/usuarios" role="button">Link</a>
       </div>
+    </div>
   </section>
   <section>
     <div class="card .bg-transparent">
-        <div class="card-body .bg-transparent">
-            Criar um Post
-            <a class="btn btn-outline-secondary " href="#" role="button">Link</a>
-        </div>
+      <div class="card-body .bg-transparent">
+        Ver lista de vips
+        <a class="btn btn-outline-secondary" href="/admin/vips" role="button">Link</a>
       </div>
+    </div>
   </section>
- 
 </main>
 
 <%- include('partials/footer') %>
