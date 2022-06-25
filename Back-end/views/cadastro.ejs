@@ -6,14 +6,14 @@
 
 <main>
     <section>
-      <form class="row g-3 my-5">
+      <form class="row g-3 my-5 py-1">
         <div class="col-md-6">
-          <label for="inputEmail4" class="form-label">Usuário</label>
-          <input type="email" class="form-control" id="inputEmail4" placeholder="Ex: bananinhaTitanica" />
+          <label for="input" class="form-label">Usuário</label>
+          <input type="text" class="form-control" id="input" placeholder="Ex: bananinhaTitanica" />
         </div>
         <div class="col-md-6">
-          <label for="inputAddress" class="form-label">Email</label>
-          <input type="text" class="form-control" id="inputAddress" placeholder="exemplo@exemplo.com" />
+          <label for="inputEmail4" class="form-label">Email</label>
+          <input type="email" class="form-control" id="inputEmail4" placeholder="exemplo@exemplo.com" />
         </div>
         <div class="col-12">
           <label for="inputPassword4" class="form-label">Senha</label>
@@ -50,11 +50,12 @@
             </label>
           </div>
         </div>
-        <div class="col-12">
-          <button type="submit" class="btn d-grid gap-2 col-6 mx-auto">Registrar-se</button>
+        <div class="col-12 p-2">
+          <button type="submit" class="btn d-grid gap-2 col-6  mx-auto">Registrar-se</button>
         </div>
       </form>
     </section>
 </main>
 
-  <%- include('partials/footer') %>
+
+<%- include('partials/footerRegister') %>
