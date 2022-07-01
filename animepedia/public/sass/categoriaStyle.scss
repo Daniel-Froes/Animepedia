@@ -2,26 +2,6 @@
 
 
 
-*{
-    margin:0;
-    padding: 0;
-    box-sizing: border-box;
-    color:$font-color !important;
-    font-family: 'Mulish', sans-serif;
-    list-style: none;
-    text-decoration: none !important;
-
-
-}
-body{
-    background-color: $background-theme !important;
-}
-header{
-    background-color: $primary-color !important;
-
-
-}
-
 .imagem-login {
     object-fit: cover;
     height: 50px;
@@ -39,7 +19,6 @@ main{
     margin: auto;
     
 }
-
 .imagem-card-slide {
     object-fit: cover;
     height: 250px;
@@ -48,10 +27,6 @@ main{
     background-color: $background-theme;
 }
 
-
-footer{
-    background-color: $primary-color !important;
-}
 .paragrafo-copy{
     border-top:1px solid gray;
 }

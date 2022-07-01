@@ -1,25 +1,6 @@
 @import "../sass/_custom_colors.scss";
 
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  color: #0bd681 !important;
-  font-family: "Mulish", sans-serif;
-  list-style: none;
-  text-decoration: none !important;
-}
-
-body {
-  background-color: #1d1839 !important;
-}
-
-header {
-  background-color: #59159e !important;
-  
-}
-
 .imagem-login {
   object-fit: cover;
   height: 50px;
@@ -32,7 +13,6 @@ header {
   font-family: Itacha;
   object-fit: cover;
 }
-
 
 main {
   margin: auto;
