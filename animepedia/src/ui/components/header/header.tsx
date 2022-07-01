@@ -5,8 +5,9 @@ import Form from "react-bootstrap/Form";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
+import Dropdown from 'react-bootstrap/Dropdown';
 import Image from "next/image";
-import { Dropdown, DropdownButton } from "react-bootstrap";
+import { DropdownButton } from "react-bootstrap";
 
 function Header() {
   return (
@@ -58,19 +59,38 @@ function Header() {
                   aria-label="Search"
                 />
                 <Button variant="outline-success">Procurar</Button>
-                <DropdownButton
-                  variant="outline-secondary"
-                  title="Dropdown"
-                  id="input-group-dropdown-4"
-                  align="end"
-                >
-                  <Dropdown.Item href="#">Action</Dropdown.Item>
-                  <Dropdown.Item href="#">Another action</Dropdown.Item>
-                  <Dropdown.Item href="#">Something else here</Dropdown.Item>
-                  <Dropdown.Divider />
-                  <Dropdown.Item href="#">Separated link</Dropdown.Item>
-                </DropdownButton>
               </Form>
+              <Dropdown>
+                <Dropdown.Toggle variant="outline-success" id="dropdown-basic">
+                  Entrar
+                </Dropdown.Toggle>
+
+                <Dropdown.Menu>
+                  <Form>
+                    <Form.Group className="mb-3" controlId="formBasicEmail">
+                      <Form.Label>Email</Form.Label>
+                      <Form.Control type="email" placeholder="Seu email" />
+                      <Form.Text className="text-muted">
+                        Nós nunca iremos compartilhar seu email com ninguém.
+                      </Form.Text>
+                    </Form.Group>
+
+                    <Form.Group className="mb-3" controlId="formBasicPassword">
+                      <Form.Label>Senha</Form.Label>
+                      <Form.Control type="password" placeholder="Password" />
+                    </Form.Group>
+                    <Form.Group className="mb-3" controlId="formBasicCheckbox">
+                      <Form.Check type="checkbox" label="Lembrar de mim" />
+                    </Form.Group>
+                    <Button variant="primary" type="submit">
+                      Entrar
+                    </Button>
+                    <Dropdown.Divider />
+                    <Dropdown.Item href="#">Novo aqui? Cadastre-se</Dropdown.Item>
+                    <Dropdown.Item href="#">Esqueci minha senha</Dropdown.Item>
+                  </Form>
+                </Dropdown.Menu>
+              </Dropdown>
             </Navbar.Collapse>
           </Container>
         </Navbar>
