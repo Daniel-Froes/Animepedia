@@ -24,7 +24,9 @@ body {
 header {
   font-size: 18px;
   background-color: $primary-color !important;
-  
+  display:flex;
+  justify-content: center;
+  align-items: center;
 }
 main {
   max-width: 1300px;
