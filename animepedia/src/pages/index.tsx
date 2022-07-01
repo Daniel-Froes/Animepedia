@@ -5,31 +5,25 @@ import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
 
 const Home: NextPage = () => {
   return (
-   <>
-    <Navbar bg="light" expand="lg">
-      <Container>
-        <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#link">Link</Nav.Link>
-            <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
-              </NavDropdown.Item>
-            </NavDropdown>
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
-   </>
+   
+    <>
+    <Nav className="justify-content-center py-4" activeKey="/home">
+    <Nav.Item>
+      <Nav.Link href="/home">Início</Nav.Link>
+    </Nav.Item>
+    <Nav.Item>
+      <Nav.Link eventKey="link-1">Quem Somos</Nav.Link>
+    </Nav.Item>
+    <Nav.Item>
+      <Nav.Link eventKey="link-2">Lorem</Nav.Link>
+    </Nav.Item>
+    <Nav.Item>
+      <Nav.Link eventKey="link-2">Lorem, ipsum</Nav.Link>
+    </Nav.Item>
+    </Nav>
+    <p className="text-center paragrafo-copy py-4 my-4">© 2022 Animepedia Inc</p>
+  </>
+    
   )
 }
 
