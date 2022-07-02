@@ -7,13 +7,14 @@ import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import Dropdown from 'react-bootstrap/Dropdown';
 import Image from "next/image";
-import { DropdownButton } from "react-bootstrap";
+
 
 function Header() {
   return (
     <>
+
       <header>
-        <Navbar className="header " expand="lg">
+        <Navbar expand="lg">
           <Container fluid>
             <Image
               className="img-nav"
@@ -28,7 +29,7 @@ function Header() {
             <Navbar.Toggle aria-controls="navbarScroll" />
             <Navbar.Collapse id="navbarScroll">
               <Nav
-                className="me-auto my-2 my-lg-0"
+                className="me-auto px-5 my-2 my-lg-0"
                 style={{ maxHeight: "100px" }}
                 navbarScroll
               >
@@ -51,7 +52,7 @@ function Header() {
                 <Nav.Link href="#">Contato</Nav.Link>
                 <Nav.Link href="#">Comunidade</Nav.Link>
               </Nav>
-              <Form className="d-flex me-auto ">
+              <Form className="d-flex me-auto p-5 ">
                 <Form.Control
                   type="search"
                   placeholder="Ex: Shingeki no kyojin"
@@ -61,12 +62,12 @@ function Header() {
                 <Button variant="outline-success">Procurar</Button>
               </Form>
               <Dropdown>
-                <Dropdown.Toggle variant="outline-success" id="dropdown-basic">
+                <Dropdown.Toggle className="mx-5" variant="outline-success" id="dropdown-basic">
                   Entrar
                 </Dropdown.Toggle>
 
                 <Dropdown.Menu>
-                  <Form>
+                  <Form >
                     <Form.Group className="mb-3" controlId="formBasicEmail">
                       <Form.Label>Email</Form.Label>
                       <Form.Control type="email" placeholder="Seu email" />

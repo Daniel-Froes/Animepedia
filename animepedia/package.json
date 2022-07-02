@@ -9,15 +9,18 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@glidejs/glide": "^3.5.2",
     "next": "12.1.6",
     "react": "^18.2.0",
     "react-bootstrap": "^2.4.0",
     "react-dom": "^18.2.0",
+    "react-glider": "^3.1.0",
     "url-loader": "^4.1.1"
   },
   "devDependencies": {
     "@babel/core": "^7.18.6",
     "@babel/preset-env": "^7.18.6",
+    "@types/glidejs__glide": "^3.4.2",
     "@types/node": "18.0.0",
     "@types/react": "18.0.14",
     "@types/react-dom": "18.0.5",
