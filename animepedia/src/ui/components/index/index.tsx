@@ -1,12 +1,13 @@
+import type { NextPage } from 'next'
 import "bootstrap/dist/css/bootstrap.css";
 
 
-const Slider = () => {
+const Index: NextPage = () => {
     return (
         <>
-        
+
         </>
     )
 }
 
-export default Slider
+export default Index
