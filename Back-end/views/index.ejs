@@ -4,6 +4,19 @@
 
 
 <main>
+  <h1>
+    <%= title %>
+  </h1>
+  <% for(let post of posts){ %>
+      <article>
+        <h2>
+          <%= post.title %>
+        </h2>
+      </article>
+    <% } %>
+
+
+  
   <section>
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
       <div class="carousel-indicators">
