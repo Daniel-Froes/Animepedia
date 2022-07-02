@@ -2,7 +2,7 @@ import type { NextPage } from 'next'
 import "bootstrap/dist/css/bootstrap.css";
 
 
-const Categoria: NextPage = () => {
+const Index: NextPage = () => {
     return (
         <>
 
@@ -10,4 +10,4 @@ const Categoria: NextPage = () => {
     )
 }
 
-export default Categoria
+export default Index
