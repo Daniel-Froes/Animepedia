@@ -9,8 +9,8 @@ export default function SliderNews() {
         <div className="container">
           <Glider
             hasArrows
-            slidesToShow={3}
-            slidesToScroll={3}
+            slidesToShow={3.5}
+            slidesToScroll={1}
             scrollLock
             hasDots
           >
