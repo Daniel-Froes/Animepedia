@@ -67,7 +67,7 @@ function Header() {
                 </Dropdown.Toggle>
 
                 <Dropdown.Menu>
-                  <Form >
+                  <Form className="p-4">
                     <Form.Group className="mb-3" controlId="formBasicEmail">
                       <Form.Label>Email</Form.Label>
                       <Form.Control type="email" placeholder="Seu email" />
