@@ -16,7 +16,6 @@ const Index: NextPage = () => {
         <SliderNews />
       </main>
       <Footer />
-      
     </>
   );
 };
