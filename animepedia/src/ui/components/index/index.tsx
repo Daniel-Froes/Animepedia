@@ -4,14 +4,19 @@ import Header from "../header/header";
 import SliderBigIndex from "./sliderIndex";
 import Footer from "../footer/footer";
 import SliderNews from "./sliderNews";
+import CardGroups from "../card/cardGroups";
 
 const Index: NextPage = () => {
   return (
     <>
       <Header />
-      <SliderBigIndex />
-      <SliderNews/>
+      <main>
+        <SliderBigIndex />
+        <CardGroups />
+        <SliderNews />
+      </main>
       <Footer />
+      
     </>
   );
 };

@@ -3,6 +3,7 @@ import "bootstrap/dist/css/bootstrap.css";
 import "../styles/globals.css";
 import "../styles/bundle.css"
 import SSRProvider from 'react-bootstrap/SSRProvider';
+import FormLogin from "../ui/components/forms/formLogin";
 
 
 

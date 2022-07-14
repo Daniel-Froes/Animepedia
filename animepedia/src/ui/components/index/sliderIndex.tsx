@@ -2,7 +2,6 @@ import Carousel from "react-bootstrap/Carousel";
 
 function SliderBigIndex() {
   return (
-    <main>
       <Carousel>
         <Carousel.Item interval={5000}>
           <img
@@ -26,7 +25,6 @@ function SliderBigIndex() {
           />
         </Carousel.Item>
       </Carousel>
-    </main>
   );
 }
 

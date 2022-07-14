@@ -1,30 +1,16 @@
 @import "../sass/_custom_colors.scss";
 
 
-.imagem-login {
-  object-fit: cover;
-  height: 50px;
-  width: 50px;
-  border-radius: 50%;
+.login-container{
+  max-width: 600px;
+  height: 590px;
 }
 
-.img-nav{
-  font-size: 50px;
-  font-family: Itacha;
-  object-fit: cover;
+.botao-form{
+  width: 200px;
 }
-
-main {
-  margin: auto;
-}
-.login-form {
-  justify-content: center;
-}
-
-footer {
-  background-color: #59159e !important;
-}
-
-.paragrafo-copy {
-  border-top: 1px solid gray;
+.footer-forms{
+  width: 100%;
+  position: fixed;
+  margin-top: 55px;
 }
