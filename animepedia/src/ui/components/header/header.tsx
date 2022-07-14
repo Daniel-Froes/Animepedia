@@ -14,7 +14,7 @@ function Header() {
     <>
 
       <header>
-        <Navbar expand="lg">
+        <Navbar expand="lg" >
           <Container fluid>
             <Image
               className="img-nav"
@@ -26,14 +26,14 @@ function Header() {
             <Navbar.Brand className="img-nav" href="/">
               Animepedia
             </Navbar.Brand>
-            <Navbar.Toggle aria-controls="navbarScroll" />
+            <Navbar.Toggle  aria-controls="navbarScroll" />
             <Navbar.Collapse id="navbarScroll">
               <Nav
                 className="me-auto px-5 my-2 my-lg-0"
                 style={{ maxHeight: "100px" }}
                 navbarScroll
               >
-                <NavDropdown title="Anime" id="navbarScrollingDropdown">
+                <NavDropdown  title="Anime" id="navbarScrollingDropdown">
                   <NavDropdown.Item href="#action3">Populares</NavDropdown.Item>
                   <NavDropdown.Item href="#action4">
                     Lançamentos
@@ -66,10 +66,10 @@ function Header() {
                   Entrar
                 </Dropdown.Toggle>
 
-                <Dropdown.Menu>
+                <Dropdown.Menu variant="dark">
                   <Form className="p-4">
                     <Form.Group className="mb-3" controlId="formBasicEmail">
-                      <Form.Label>Email</Form.Label>
+                      <Form.Label >Email</Form.Label>
                       <Form.Control type="email" placeholder="Seu email" />
                       <Form.Text className="text-muted">
                         Nós nunca iremos compartilhar seu email com ninguém.
@@ -83,11 +83,11 @@ function Header() {
                     <Form.Group className="mb-3" controlId="formBasicCheckbox">
                       <Form.Check type="checkbox" label="Lembrar de mim" />
                     </Form.Group>
-                    <Button variant="primary" type="submit">
+                    <Button variant="outline-success" type="submit">
                       Entrar
                     </Button>
                     <Dropdown.Divider />
-                    <Dropdown.Item href="#">Novo aqui? Cadastre-se</Dropdown.Item>
+                    <Dropdown.Item href="/n/cadastro">Novo aqui? Cadastre-se</Dropdown.Item>
                     <Dropdown.Item href="#">Esqueci minha senha</Dropdown.Item>
                   </Form>
                 </Dropdown.Menu>

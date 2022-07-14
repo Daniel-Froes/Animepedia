@@ -1,25 +1,7 @@
 @import "../sass/_custom_colors.scss";
 
 
-
-.imagem-login {
-  object-fit: cover;
-  height: 50px;
-  width: 50px;
-  border-radius: 50%;
-}
-.img-nav{
-  font-size: 50px;
-  font-family: Itacha;
-  object-fit: cover;
-}
-
-main {
-  margin: auto;
-
-}
-
-
-.paragrafo-copy {
-  border-top: 1px solid gray;
+.botao-centralizado{
+  display: flex;
+  justify-content: center;
 }
