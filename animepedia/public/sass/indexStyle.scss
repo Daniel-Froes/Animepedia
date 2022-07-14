@@ -45,14 +45,6 @@ main {
   object-fit: cover;
 }
 
-
-.card-reacoes button {
-  padding: 0;
-  border: none;
-  background: none;
-  padding-left: 15px;
-  margin: 10px 0;
-}
 .imagem-carrossel {
   margin-top: 50px;
   object-position: 0 5%;
@@ -62,13 +54,14 @@ main {
 
 .imagem-card-grid {
   object-fit: cover;
-  object-position: 40% 50%;
   height: 300px;
 }
 .imagem-card-slide {
   object-fit: cover;
   height: 300px;
+  border-radius: 50px;
 }
+
 
 footer {
   background-color: $primary-color !important;
