@@ -10,7 +10,7 @@ function Anime() {
       <Header />
       <Container className="mt-5">
         <Row>
-          <Col> <img src= "./public/images/snk.jpg" /> </Col>
+          <Col> <img src= "/images/snk.jpg" /> </Col>
           <Col xs={5}>Attack on Titan</Col>
         </Row>
       </Container>
