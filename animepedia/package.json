@@ -15,7 +15,7 @@
     "react-bootstrap": "^2.4.0",
     "react-dom": "^18.2.0",
     "react-glider": "^3.1.0",
-    "reactstrap": "^9.1.1",
+    "reactstrap": "^9.1.2",
     "url-loader": "^4.1.1"
   },
   "devDependencies": {
