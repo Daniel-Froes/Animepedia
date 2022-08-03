@@ -13,17 +13,17 @@ function Anime() {
       <Container className="mt-5">
         <Row>
           <Col> <img src= "/images/snk.jpg" className="img-anime"/> </Col>
-          <Col xs={6}>
-            <h2>Attack on Titan</h2>
-            <p>Shingeki no Kyojin</p>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta fugiat totam cum omnis quos necessitatibus! Reprehenderit in nisi earum esse excepturi architecto sed, maiores, molestias fuga repellendus quaerat obcaecati nam? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta fugiat totam cum omnis quos necessitatibus! Reprehenderit in nisi earum esse excepturi architecto sed, maiores, molestias fuga repellendus quaerat obcaecati nam? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta fugiat totam cum omnis quos necessitatibus! Reprehenderit in nisi earum esse excepturi architecto sed, maiores, molestias fuga repellendus quaerat obcaecati nam? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta fugiat totam cum omnis quos necessitatibus! Reprehenderit in nisi earum esse excepturi architecto sed, maiores, molestias fuga repellendus quaerat obcaecati nam? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta fugiat totam cum omnis quos necessitatibus! Reprehenderit in nisi earum esse excepturi architecto sed, maiores</p>
-            <p>Autor:</p>          
-            <p>Gênero:</p>          
-            <p>Data de Lançamento:</p>          
-            <p>Status:</p>          
-            <p>Duração:</p>          
-            <p>Popularidade:</p>          
-            <p>Onde Assistir:</p>          
+          <Col xs={6} >
+            <h2 className="text-anime">Attack on Titan</h2>
+            <p className="text-anime">Shingeki no Kyojin</p>
+            <p className="text-anime">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta fugiat totam cum omnis quos necessitatibus! Reprehenderit in nisi earum esse excepturi architecto sed, maiores, molestias fuga repellendus quaerat obcaecati nam? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta fugiat totam cum omnis quos necessitatibus! Reprehenderit in nisi earum esse excepturi architecto sed, maiores, molestias fuga repellendus quaerat obcaecati nam? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta fugiat totam cum omnis quos necessitatibus! Reprehenderit in nisi earum esse excepturi architecto sed, maiores, molestias fuga repellendus quaerat obcaecati nam? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta fugiat totam cum omnis quos necessitatibus! Reprehenderit in nisi earum esse excepturi architecto sed, maiores, molestias fuga repellendus quaerat obcaecati nam? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta fugiat totam cum omnis quos necessitatibus! Reprehenderit in nisi earum esse excepturi architecto sed, maiores</p>
+            <p className="text-anime">Autor:</p>          
+            <p className="text-anime">Gênero:</p>          
+            <p className="text-anime" >Data de Lançamento:</p>          
+            <p className="text-anime">Status:</p>          
+            <p className="text-anime">Duração:</p>          
+            <p className="text-anime">Popularidade:</p>          
+            <p className="text-anime">Onde Assistir:</p>          
           </Col>
         </Row>
         <Form>
