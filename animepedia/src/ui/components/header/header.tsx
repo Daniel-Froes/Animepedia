@@ -33,7 +33,7 @@ function Header() {
                 style={{ maxHeight: "100px" }}
                 navbarScroll
               >
-                <NavDropdown  title="Anime" id="navbarScrollingDropdown">
+                <NavDropdown  title="Anime" menuVariant="dark" id="navbarScrollingDropdown" >
                   <NavDropdown.Item href="#action3">Populares</NavDropdown.Item>
                   <NavDropdown.Item href="#action4">
                     Lançamentos
@@ -41,7 +41,7 @@ function Header() {
                   <NavDropdown.Item href="#action5">Gêneros</NavDropdown.Item>
                   <NavDropdown.Item href="#action6">Ver tudo</NavDropdown.Item>
                 </NavDropdown>
-                <NavDropdown title="Mangá" id="navbarScrollingDropdown">
+                <NavDropdown title="Mangá" menuVariant="dark" id="navbarScrollingDropdown">
                   <NavDropdown.Item href="#action3">Populares</NavDropdown.Item>
                   <NavDropdown.Item href="#action4">
                     Lançamentos
@@ -56,7 +56,7 @@ function Header() {
                 <Form.Control
                   type="search"
                   placeholder="Ex: Shingeki no kyojin"
-                  className="me-2"
+                  className="me-2 form-anime"
                   aria-label="Search"
                 />
                 <Button variant="outline-success">Procurar</Button>
