@@ -1,5 +1,29 @@
 # Iniciando o projeto
 
+## Sobre o projeto
+
+A ideia principal é criar um site para notícias, indicações e informações.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Instalar todas as dependências com `npm install` (dentro da pasta raiz).
 
 Rodar o servidor com `npm run dev` .

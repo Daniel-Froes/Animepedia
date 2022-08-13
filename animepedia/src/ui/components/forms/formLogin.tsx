@@ -13,7 +13,7 @@ function FormLogin() {
             <Form.Label>Email</Form.Label>
             <Form.Control type="email" placeholder="Seu email" />
           </Form.Group>
-
+          <BsArrowRight/>
           <Form.Group className="mb-3" controlId="formBasicPassword">
             <Form.Label>Senha</Form.Label>
             <Form.Control type="password" placeholder="Senha" />
@@ -36,6 +36,7 @@ function FormLogin() {
             >
               Registre-se
             </Button>
+            
           </div>
         </Form>
       </main>
