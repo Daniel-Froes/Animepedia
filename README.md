@@ -1,27 +1,24 @@
-# Iniciando o projeto
+<h1 align="center">Animepedia</h1>
 
 ## Sobre o projeto
 
 A ideia principal é criar um site para notícias, indicações e informações.
 
 
+*Você como usuário poderá:*
 
 
+- [x] Cadastro de usuário
+- [x] Criação de posts
+- [x] Comentar sobre anime/informação/notícia
+- [x] Avaliar animes/mangás
+- [x] Interação na aba comunidade
+- [x] Acesso a uma informação de qualidade e gratuita
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+<h4 align="center"> 
+	🚧  Discord 🚀 Em construção...  🚧
+</h4>
 
 
 Instalar todas as dependências com `npm install` (dentro da pasta raiz).
