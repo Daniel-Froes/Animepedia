@@ -4,8 +4,13 @@
   font-style: normal;
   font-weight: normal;
   src: local('Zenzai Itacha Regular'), url('/fonts/Zenzai Itacha.woff') format('woff');
-  }
-  
+  };
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: bold;
+  src: local('Ubuntu-Bold'), url('/fonts/Ubuntu-Bold') format('ttf');
+}
 
 * {
   margin: 0;
@@ -55,7 +60,8 @@ main {
 
 .imagem-card-grid {
   object-fit: cover;
-  height: 300px;
+  height: 350px;
+  border-radius: 10px;
 }
 .imagem-card-slide {
   object-fit: cover;
@@ -63,6 +69,20 @@ main {
   border-radius: 50px;
 }
 
+.body-card{
+  background-color: $background-theme !important;
+  
+}
+
+.card-group{
+  border-radius: 10px;
+}
+
+.card-title{
+  font-size: 40px;
+  font-family: 'Ubuntu' !important;
+  font-weight: bold;
+}
 
 footer {
   background-color: $primary-color !important;
