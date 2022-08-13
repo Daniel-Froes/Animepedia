@@ -45,3 +45,27 @@ main{
     border-top:1px solid gray;
 }
 
+.img-anime{
+    object-fit:fill;
+    width: 75%;
+    border-radius: 10px;
+}
+
+.textarea{
+    height: 250px;
+    background-color: $background-theme!important;
+    color: $font-color-second !important
+}
+
+.form-anime{
+    background-color: $background-theme!important;
+    color: $font-color-second !important
+}
+
+.text-anime{
+    color: $font-color-second !important
+}
+
+::placeholder{
+    color: $font-color !important;
+}

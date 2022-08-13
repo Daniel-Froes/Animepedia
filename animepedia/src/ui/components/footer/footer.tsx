@@ -11,13 +11,13 @@ const Footer = () => {
             <Nav.Link href="/">Início</Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link eventKey="link-1">Quem Somos</Nav.Link>
+            <Nav.Link href="/n/sobre">Quem Somos</Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link eventKey="link-2">Lorem</Nav.Link>
+            <Nav.Link eventKey="link-2">Termos de Uso</Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link eventKey="link-2">Lorem, ipsum</Nav.Link>
+            <Nav.Link eventKey="link-2">Política de Privacidade</Nav.Link>
           </Nav.Item>
         </Nav>
         <p className="text-center paragrafo-copy py-4 ">
