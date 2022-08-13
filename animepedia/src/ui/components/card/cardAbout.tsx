@@ -1,26 +1,43 @@
+import { Container } from 'react-bootstrap';
 import Card from 'react-bootstrap/Card';
-import Col from 'react-bootstrap/Col';
-import Row from 'react-bootstrap/Row';
+import CardGroup from 'react-bootstrap/CardGroup';
 
 function CardAbout() {
   return (
-    <Row xs={1} md={2} className="g-4 my-5">
-      {Array.from({ length: 4 }).map((_, idx) => (
-        <Col>
-          <Card>
-            <Card.Img className="imagem-card-grid " variant="top" src="/images/shikimori.jpg" />
-            <Card.Body>
-              <Card.Title>Card title</Card.Title>
-              <Card.Text>
-                This is a longer card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
-              </Card.Text>
-            </Card.Body>
-          </Card>
-        </Col>
-      ))}
-    </Row>
+    <>
+    <div>
+    <CardGroup className='gap-5 card-group'>
+      <Card className="body-card">
+        <Card.Img variant="top" src="/images/officialtrailer.jpg" className="imagem-card-grid" />
+        <Card.Body>
+          <Card.Title className="text-center">ANIMES</Card.Title>
+        </Card.Body>
+      </Card>
+      <Card className="body-card">
+        <Card.Img variant="top" src="/images/mangas.jpg" className="imagem-card-grid" />
+        <Card.Body>
+          <Card.Title className="text-center card-title">MANGAS</Card.Title>
+        </Card.Body>
+      </Card>
+    </CardGroup>
+    </div>
+    <div>
+    <CardGroup className='gap-5 card-group'>
+      <Card className="body-card">
+        <Card.Img variant="top" src="/images/comunidade.jpg" className="imagem-card-grid" />
+        <Card.Body>
+          <Card.Title className="text-center">COMUNIDADE</Card.Title>
+        </Card.Body>
+      </Card>
+      <Card className="body-card">
+        <Card.Img variant="top" src="/images/art.jpg" className="imagem-card-grid" />
+        <Card.Body>
+          <Card.Title className="text-center card-title">DIVULGUE SUA ARTE</Card.Title>
+        </Card.Body>
+      </Card>
+    </CardGroup>
+    </div>
+    </>
   );
 }
 

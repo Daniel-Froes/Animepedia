@@ -7,6 +7,7 @@ import SliderAbout from "../index/sliderAbout";
 import HeaderAbout from "../header/headerAbout";
 import CardAbout from "../card/cardAbout";
 
+
 function PageSobre() {
   return (
     <>
@@ -25,12 +26,12 @@ function PageSobre() {
             </Col>
           </Row>
         </Container>
-        <h3 className="text-center mt-4">
+        <h3 className="text-center mt-4 mb-5">
           Aqui você pode encontrar sua comunidade e ter a liberdade de ser quem
           você é
         </h3>
         <CardAbout />
-        <Container>
+        <Container className="mt-5">
           <Col>
             <h2>Quem somos</h2>
           </Col>
@@ -59,6 +60,7 @@ function PageSobre() {
                   className="img-about mt-3 mx-auto d-block "
                 />
                 <p className="mt-3 text-center"> Tenho 23 anos, moro no Rio de Janeiro e sou desenvolvedora FullStack com experiência em Front-end. </p>
+
               </Figure></Col>
           </Row>
         </Container>
