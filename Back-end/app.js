@@ -1,3 +1,4 @@
+const cookieParser = require('cookie-parser');
 const express = require("express");
 require("dotenv").config();
 const app = express();
@@ -8,6 +9,7 @@ const routes = require("./routes/index.js");
 
 app.use(morgan("dev"));
 app.use(bodyParser.urlencoded({ extended: false }));
+app.use(cookieParser());
 app.use(bodyParser.json());
 app.use((req, res, next) => {
   res.header("Access-Control-Allow-Origin", "*");

@@ -3,8 +3,6 @@ const Usuario = require("../models").Usuario;
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 
-
-
 class UsuarioController {
   static listarTodosUsuarios = async (req, res) => {
     try {
@@ -31,8 +29,6 @@ class UsuarioController {
   static cadastro = async (req, res) => {
     const dados = req.body;
 
-    
-    
     dados.senha = await bcrypt.hashSync(dados.senha, 8);
 
     console.log(dados);
@@ -57,7 +53,7 @@ class UsuarioController {
     const updateUserInfo = req.body;
     try {
       updateUserInfo.senha = await bcrypt.hashSync(updateUserInfo.senha, 8);
-  
+
       await Usuario.update(updateUserInfo, {
         where: { id: Number(id) },
       });
@@ -107,21 +103,14 @@ class UsuarioController {
         mensagem: "Usuário ou a senha incorreto!",
       });
     }
-    const token = jwt.sign({ id: Usuario.id }, '1234', {
-      expiresIn: 600,
-    });
-
-    return res.json({
-      erro: false,
-      mensagem: "Login realizado com sucesso!",
-      token,
-    });
+    const token = jwt.sign({ id: Usuario.id }, "1234", { expiresIn: '60 days' });
+    res.cookie('nToken', token, { maxAge: 900000, httpOnly: true })
+    console.log(token)
+    return res.redirect('/');
   };
-
-  static logout = async (req, res) => {
-    res.cookie('jwt', '', { maxAge: 1})
-  }
-
+    
+    
 }
+
 
 module.exports = UsuarioController;
