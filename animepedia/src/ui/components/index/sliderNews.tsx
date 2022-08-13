@@ -20,12 +20,6 @@ export default function SliderNews() {
             <div className="slide"><CardNews/></div>
             <div className="slide"><CardNews/></div>
             <div className="slide"><CardNews/></div>
-            <div className="slide">oi6</div>
-            <div className="slide">8</div>
-            <div className="slide">9</div>
-            <div className="slide">10</div>
-            <div className="slide">11</div>
-            <div className="slide">12</div>
           </Glider>
         </div>
       </div>
