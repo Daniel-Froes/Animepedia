@@ -10,15 +10,7 @@ module.exports = (sequelize, DataTypes) => {
      * The `models/index` file will call this method automatically.
      */
     static associate(models) {
-      Comentarios.belongsToMany(models.post,{
-        foreignKey: 'comentario_id'
-      })
-      Comentarios.belongsToMany(models.usuario,{
-        foreignKey: 'comentario_id'
-      })
-      Comentarios.belongsToMany(models.anime,{
-        foreignKey: 'comentario_id'
-      })
+
     }
   }
   Comentarios.init({
