@@ -78,7 +78,7 @@ main {
   border-radius: 10px;
 }
 
-.card-title{
+.titulo-card{
   font-size: 40px;
   font-family: 'Ubuntu' !important;
   font-weight: bold;
@@ -94,4 +94,8 @@ footer {
 .img-about{
   border-radius: 150px;
   object-fit: cover;
+}
+
+.resume-text{
+  font-size: 20px;
 }

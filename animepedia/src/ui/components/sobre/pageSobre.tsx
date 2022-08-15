@@ -6,7 +6,10 @@ import Footer from "../footer/footer";
 import SliderAbout from "../index/sliderAbout";
 import HeaderAbout from "../header/headerAbout";
 import CardAbout from "../card/cardAbout";
-
+import FormContato from "../forms/formContato";
+import { BsTwitter } from "react-icons/bs";
+import { BsGithub } from "react-icons/bs";
+import { BsLinkedin } from "react-icons/bs";
 
 function PageSobre() {
   return (
@@ -33,7 +36,7 @@ function PageSobre() {
         <CardAbout />
         <Container className="mt-5">
           <Col>
-            <h2>Quem somos</h2>
+            <h1>Quem somos</h1>
           </Col>
           <Row className="mt-3">
             <Col>
@@ -46,7 +49,14 @@ function PageSobre() {
                   src="/images/daniel.jfif"
                   className="img-about mt-3 mx-auto d-block "
                 />
-                <p className="mt-3 text-center"> Seu resumin aqui</p>
+                <p className="mt-3 text-center resume-text"> Seu resumin aqui</p>
+                <>
+                <div className="text-center resume-text">
+                <a href="" target="_blank" ><BsTwitter /></a>
+                <a href="" target="_blank" className="ms-3"><BsGithub /></a>
+                <a href="" target="_blank" className="ms-3"><BsLinkedin /></a>
+                </div>
+                </> 
               </Figure>
             </Col>
             <Col>
@@ -59,10 +69,20 @@ function PageSobre() {
                   src="/images/isa.jpg"
                   className="img-about mt-3 mx-auto d-block "
                 />
-                <p className="mt-3 text-center"> Tenho 23 anos, moro no Rio de Janeiro e sou desenvolvedora FullStack com experiência em Front-end. </p>
-
+                <p className="mt-3 text-center resume-text"> Tenho 23 anos, moro no Rio de Janeiro e sou desenvolvedora FullStack com experiência em Front-end. </p>
+                <>
+                <div className="text-center resume-text">
+                <a href="https://twitter.com/levisgirIf" target="_blank" ><BsTwitter /></a>
+                <a href="https://github.com/isocabp" target="_blank" className="ms-3"><BsGithub /></a>
+                <a href="https://www.linkedin.com/in/isabellabferreira/" target="_blank" className="ms-3"><BsLinkedin /></a>
+                </div>
+                </>  
               </Figure></Col>
           </Row>
+          <>
+          <h1>Contato</h1>
+          <FormContato />
+          </>
         </Container>
       </main>
       <Footer />

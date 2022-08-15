@@ -10,13 +10,13 @@ function CardAbout() {
       <Card className="body-card">
         <Card.Img variant="top" src="/images/officialtrailer.jpg" className="imagem-card-grid" />
         <Card.Body>
-          <Card.Title className="text-center">ANIMES</Card.Title>
+          <Card.Title className="text-center titulo-card">ANIMES</Card.Title>
         </Card.Body>
       </Card>
       <Card className="body-card">
         <Card.Img variant="top" src="/images/mangas.jpg" className="imagem-card-grid" />
         <Card.Body>
-          <Card.Title className="text-center card-title">MANGAS</Card.Title>
+          <Card.Title className="text-center titulo-card">MANGAS</Card.Title>
         </Card.Body>
       </Card>
     </CardGroup>
@@ -26,13 +26,13 @@ function CardAbout() {
       <Card className="body-card">
         <Card.Img variant="top" src="/images/comunidade.jpg" className="imagem-card-grid" />
         <Card.Body>
-          <Card.Title className="text-center">COMUNIDADE</Card.Title>
+          <Card.Title className="text-center titulo-card">COMUNIDADE</Card.Title>
         </Card.Body>
       </Card>
       <Card className="body-card">
         <Card.Img variant="top" src="/images/art.jpg" className="imagem-card-grid" />
         <Card.Body>
-          <Card.Title className="text-center card-title">DIVULGUE SUA ARTE</Card.Title>
+          <Card.Title className="text-center titulo-card">DIVULGUE SUA ARTE</Card.Title>
         </Card.Body>
       </Card>
     </CardGroup>
