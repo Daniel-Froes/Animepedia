@@ -14,10 +14,10 @@ const Footer = () => {
             <Nav.Link href="/n/sobre">Quem Somos</Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link eventKey="link-2">Termos de Uso</Nav.Link>
+            <Nav.Link href="/n/termos">Termos de Uso</Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link eventKey="link-2">Política de Privacidade</Nav.Link>
+            <Nav.Link href="/n/privacidade">Política de Privacidade</Nav.Link>
           </Nav.Item>
         </Nav>
         <p className="text-center paragrafo-copy py-4 ">
