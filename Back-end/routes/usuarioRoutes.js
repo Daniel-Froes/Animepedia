@@ -12,6 +12,7 @@ router.get('/api/v1/logout', (req, res) => {
 });
 
 
+
 router
   .get("/api/v1/usuarios", usuarioController.listarTodosUsuarios)
   .get("/api/v1/usuarios/:id", usuarioController.umUsuario)
