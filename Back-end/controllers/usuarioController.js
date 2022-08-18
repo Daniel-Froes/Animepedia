@@ -1,12 +1,21 @@
 require("dotenv").config();
-const Usuario = require("../models").Usuario;
+const Usuarios = require("../models").Usuarios;
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 
-class UsuarioController {
+class usuariosController {
+  constructor(Usuarios) {
+    this.senhaHash = Usuarios.senhaHash;
+  }
+
+  static gerarSenhaHash(senha) {
+    const custoHash = 12;
+    return bcrypt.hashSync(senha, custoHash);
+  }
+
   static listarTodosUsuarios = async (req, res) => {
     try {
-      const allUsers = await Usuario.findAll();
+      const allUsers = await Usuarios.findAll();
       return res.status(200).json(allUsers);
     } catch (error) {
       return res.status(500).json(error.message);
@@ -15,7 +24,7 @@ class UsuarioController {
   static umUsuario = async (req, res) => {
     const { id } = req.params;
     try {
-      const getUser = await Usuario.findOne({
+      const getUser = await Usuarios.findOne({
         where: {
           id: Number(id),
         },
@@ -28,12 +37,16 @@ class UsuarioController {
 
   static cadastro = async (req, res) => {
     const dados = req.body;
-
-    dados.senha = await bcrypt.hashSync(dados.senha, 8);
-
     console.log(dados);
+    console.log(dados.senha);
 
-    await Usuario.create(dados)
+    this.senhaHash = usuariosController.gerarSenhaHash(dados.senha);
+
+    dados.senha = this.senhaHash;
+
+    console.log(this.senhaHash);
+
+    await Usuarios.create(dados)
       .then(() => {
         return res.json({
           erro: false,
@@ -52,12 +65,12 @@ class UsuarioController {
     const { id } = req.params;
     const updateUserInfo = req.body;
     try {
-      updateUserInfo.senha = await bcrypt.hashSync(updateUserInfo.senha, 8);
-
-      await Usuario.update(updateUserInfo, {
+      this.senhaHash = usuariosController.gerarSenhaHash(updateUserInfo.senha);
+      updateUserInfo.senha = this.senhaHash;
+      await Usuarios.update(updateUserInfo, {
         where: { id: Number(id) },
       });
-      const updatedAtUser = await Usuario.findOne({
+      const updatedAtUser = await Usuarios.findOne({
         where: {
           id: Number(id),
         },
@@ -71,7 +84,7 @@ class UsuarioController {
   static deletarUsuario = async (req, res) => {
     const { id } = req.params;
     try {
-      await Usuario.destroy({
+      await Usuarios.destroy({
         where: {
           id: Number(id),
         },
@@ -83,34 +96,38 @@ class UsuarioController {
   };
 
   static login = async (req, res) => {
-    const Usuarios = await Usuario.findOne({
-      attributes: ["id", "nome", "sobrenome", "nickname", "senha"],
+    const Usuario = await Usuarios.findOne({
+      attributes: ["id", "nome", "sobrenome", "email", "nickname", "senha"],
       where: {
         email: req.body.email,
       },
     });
 
-    if (Usuario === null) {
+    if (Usuarios === null) {
       return res.status(400).json({
         error: true,
         mensagem: "Usuário ou a senha incorreto!",
       });
     }
-
-    if (!(await bcrypt.compare(req.body.senha, Usuarios.senha))) {
+    
+    if (!(bcrypt.compare("req.body.senha", "Usuario.senhaHash"))) {
       return res.status(400).json({
         error: true,
         mensagem: "Usuário ou a senha incorreto!",
+        
       });
+      
     }
-    const token = jwt.sign({ id: Usuario.id }, "1234", { expiresIn: '60 days' });
-    res.cookie('nToken', token, { maxAge: 900000, httpOnly: true })
-    console.log(token)
-    return res.redirect('/');
+    const token = jwt.sign({ id: Usuario.id }, "$2a$12$Qd0FtHVmx8tYL4vID0JcwuopLMDSG9aZzGObrXgH0tvebiOO2GEXm", {
+      expiresIn: 600,
+    });
+    
+    return res.json({
+      erro: false,
+      mensagem: "Login realizado com sucesso!",
+      token,
+    });
   };
-    
-    
 }
 
-
-module.exports = UsuarioController;
+module.exports = usuariosController;

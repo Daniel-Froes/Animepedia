@@ -20,7 +20,7 @@ module.exports = {
         })
     }
     try {
-        const decode = await promisify(jwt.verify)(token, "1234");
+        const decode = await promisify(jwt.verify)(token, "$2a$12$Qd0FtHVmx8tYL4vID0JcwuopLMDSG9aZzGObrXgH0tvebiOO2GEXm");
         req.userId = decode.id
         return next();
     } catch (error) {
