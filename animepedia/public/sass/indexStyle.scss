@@ -43,6 +43,7 @@ main {
   height: 50px;
   width: 50px;
   border-radius: 50%;
+  
 }
 .img-nav {
   font-size: 50px;
@@ -112,4 +113,31 @@ footer {
 .text-privacidade{
   font-size: 20px;
   margin-left: 3%;
+}
+
+.container-login{
+  width: 100%;
+  padding: 20px 30px 20px 30px;
+  
+}
+
+.container-login:hover{
+  background-color: $form-color-second;
+  cursor: pointer;
+  
+}
+
+.p-login{
+  font-size: 20px;
+  color: $font-color-second !important;
+}
+
+.perfil-editar{
+  display: flex;
+  gap: 3em;
+}
+
+.user-perfil{
+  font-size: 2em;
+  align-self: center;
 }
