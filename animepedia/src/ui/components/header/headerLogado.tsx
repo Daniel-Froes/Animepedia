@@ -93,7 +93,7 @@ function HeaderLogado() {
                     height="70"
                   />
                   <Container className="container-login">
-                    <Link href={"/n/cadastro"}>
+                    <Link href={"/n/favoritos"}>
                       <p className="p-login">
                         <FaRegHeart /> Meus favoritos
                       </p>

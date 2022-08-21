@@ -60,7 +60,7 @@ main {
 }
 
 .imagem-card-grid {
-  object-fit: cover;
+  object-fit:cover;
   height: 350px;
   border-radius: 10px;
 }
@@ -135,6 +135,7 @@ footer {
 .perfil-editar{
   display: flex;
   gap: 3em;
+  justify-content: center;
 }
 
 .user-perfil{
