@@ -1,6 +1,6 @@
 import type { NextPage } from 'next'
 import "bootstrap/dist/css/bootstrap.css";
-import Anime from '../../ui/components/anime/anime';
+import Anime from '../../ui/components/anime';
 
 
 

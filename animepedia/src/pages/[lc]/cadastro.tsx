@@ -1,6 +1,6 @@
 import type { NextPage } from 'next'
 import "bootstrap/dist/css/bootstrap.css";
-import FormCadastro from '../../ui/components/forms/formCadastro';
+import FormCadastro from '../../ui/components/Cadastro';
 
 
 

@@ -59,7 +59,7 @@ function FormCadastro() {
             <Form.Control type="file" />
           </Form.Group>
           <div className="botao-centralizado">
-            <Button  variant="outline-success" type="submit">
+            <Button  variant="outline-light" type="submit">
               Registrar
             </Button>
           </div>

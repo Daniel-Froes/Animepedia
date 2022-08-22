@@ -1,6 +1,6 @@
 import type { NextPage } from 'next'
 import "bootstrap/dist/css/bootstrap.css";
-import PageFavoritos from '../../ui/components/favoritos/PageFavoritos';
+import PageFavoritos from '../../ui/components/favoritos';
 
 
 

@@ -62,14 +62,14 @@ function FormLogin () {
           <div>
             <Button
               className="botao-form ms-5 "
-              variant="outline-success"
+              variant="outline-light"
               type="submit"
             >
               Iniciar Sessão
             </Button>
             <Button
               className="botao-form mx-2"
-              variant="outline-success"
+              variant="outline-light"
               type="submit"
             >
               Registre-se
