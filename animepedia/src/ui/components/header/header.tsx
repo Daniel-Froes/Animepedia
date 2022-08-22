@@ -49,7 +49,7 @@ function Header() {
                   <NavDropdown.Item href="#action5">Gêneros</NavDropdown.Item>
                   <NavDropdown.Item href="#action6">Ver tudo</NavDropdown.Item>
                 </NavDropdown>
-                <Nav.Link href="#">Contato</Nav.Link>
+                <Nav.Link href="/n/contato">Contato</Nav.Link>
                 <Nav.Link href="#">Comunidade</Nav.Link>
               </Nav>
               <Form className="d-flex me-auto p-5 ">
@@ -59,10 +59,10 @@ function Header() {
                   className="me-2 form-anime"
                   aria-label="Search"
                 />
-                <Button variant="outline-success">Procurar</Button>
+                <Button variant="outline-light">Procurar</Button>
               </Form>
               <Dropdown>
-                <Dropdown.Toggle className="mx-5" variant="outline-success" id="dropdown-basic">
+                <Dropdown.Toggle className="mx-5" variant="outline-light" id="dropdown-basic">
                   Entrar
                 </Dropdown.Toggle>
 
@@ -83,7 +83,7 @@ function Header() {
                     <Form.Group className="mb-3" controlId="formBasicCheckbox">
                       <Form.Check type="checkbox" label="Lembrar de mim" />
                     </Form.Group>
-                    <Button variant="outline-success" type="submit">
+                    <Button variant="outline-light" type="submit">
                       Entrar
                     </Button>
                     <Dropdown.Divider />

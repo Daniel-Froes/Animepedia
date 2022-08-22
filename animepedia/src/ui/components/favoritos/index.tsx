@@ -11,6 +11,7 @@ function PageFavoritos() {
                 <h2 className="mt-5 mb-5">Meus Favoritos</h2>
                 <CardFavoritos />
             </main>
+            <Footer />
         </>
     )
 }
