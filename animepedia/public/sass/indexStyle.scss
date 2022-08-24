@@ -143,3 +143,11 @@ footer {
   align-self: center;
 }
 
+.card-index{
+  transition: transform .2s;
+}
+
+.card-index:hover{
+  transform: scale(0.9);
+  cursor: pointer;
+}

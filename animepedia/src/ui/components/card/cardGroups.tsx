@@ -7,7 +7,7 @@ export default function CardGroups() {
     <Row xs={1} md={3} className="g-4 my-5">
       {Array.from({ length: 9 }).map((_, idx) => (
         <Col>
-          <Card>
+          <Card className='card-index'>
             <Card.Img className="imagem-card-grid " variant="top" src="/images/shikimori.jpg" />
             <Card.Body>
               <Card.Title>Card title</Card.Title>
