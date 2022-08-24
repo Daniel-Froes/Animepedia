@@ -13,7 +13,7 @@ function SliderBigIndex() {
         <Carousel.Item interval={5000}>
           <img
             className="d-block w-100 imagem-carrossel"
-            src="/images/snk.jpg"
+            src="/images/the-promised-neverland.jpg"
             alt="Second slide"
           />
         </Carousel.Item>
