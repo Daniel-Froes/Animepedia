@@ -39,7 +39,7 @@ function Manga() {
           </Col>
         </Row>
         ))}
-        >
+        
         <Form>
           
       <Form.Group className="mb-3 mt-5" controlId="exampleForm.ControlTextarea1" >
