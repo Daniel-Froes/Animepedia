@@ -1,8 +1,7 @@
-import { NextPage } from "next";
 import "bootstrap/dist/css/bootstrap.css";
-import FormContato from "../../ui/components/forms/formContato";
+import FormContato from "../../ui/components/Forms/formContato";
 
-const Contato: NextPage = () => {
+const Contato = () => {
     return(
         <>
             <FormContato />

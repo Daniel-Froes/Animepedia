@@ -2,10 +2,10 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Figure from "react-bootstrap/Figure";
-import Footer from "../footer/footer";
-import SliderAbout from "../index/sliderAbout";
-import HeaderAbout from "../header/headerAbout";
-import CardAbout from "../card/cardAbout";
+import Footer from "../Footer/footer";
+import SliderAbout from "../Index/sliderAbout";
+import HeaderAbout from "../Header/headerAbout";
+import CardAbout from "../Card/cardAbout";
 import React from "react";
 
 function PageSobre() {

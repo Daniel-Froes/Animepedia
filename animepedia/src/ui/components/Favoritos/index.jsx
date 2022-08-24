@@ -1,7 +1,7 @@
-import CardFavoritos from "../card/cardFavoritos";
+import CardFavoritos from "../Card/cardFavoritos";
 
-import Footer from "../footer/footer";
-import HeaderLogado from "../header/headerLogado";
+import Footer from "../Footer/footer";
+import HeaderLogado from "../Header/headerLogado";
 
 function PageFavoritos() {
     return (

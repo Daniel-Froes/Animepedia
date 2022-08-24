@@ -1,7 +1,7 @@
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
-import Header from "../header/header";
-import Footer from "../footer/footer";
+import Header from "../Header/header";
+import Footer from "../Footer/footer";
 
 function FormContato() {
   return (

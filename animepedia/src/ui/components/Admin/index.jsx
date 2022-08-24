@@ -1,11 +1,11 @@
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import HeaderLogado from "../header/headerLogado";
+import HeaderLogado from "../Header/headerLogado";
 import { BsHouseFill, BsFilePost, BsBookmarksFill } from "react-icons/bs";
 import { FiUsers } from "react-icons/fi";
 import Table from "react-bootstrap/Table";
-import Footer from "../footer/footer";
+import Footer from "../Footer/footer";
 import CriarPost from "../Container/criarPost";
 import CriarAnime from "../Container/criarCategoria";
 

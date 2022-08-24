@@ -1,10 +1,10 @@
 import type { NextPage } from "next";
 import "bootstrap/dist/css/bootstrap.css";
-import Header from "../header/header";
+import Header from "../Header/header";
 import SliderBigIndex from "./sliderIndex";
-import Footer from "../footer/footer";
+import Footer from "../Footer/footer";
 import SliderNews from "./sliderNews";
-import CardGroups from "../card/cardGroups";
+import CardGroups from "../Card/cardGroups";
 
 const Index: NextPage = () => {
   return (

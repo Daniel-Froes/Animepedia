@@ -1,8 +1,7 @@
-import type { NextPage } from 'next'
 import "bootstrap/dist/css/bootstrap.css";
-import TermosUso from '../../ui/components/termosDeUso';
+import TermosUso from '../../ui/components/TermosDeUso';
 
-const Termos: NextPage = () => {
+const Termos = () => {
     return (
      <>   
         <TermosUso/>
