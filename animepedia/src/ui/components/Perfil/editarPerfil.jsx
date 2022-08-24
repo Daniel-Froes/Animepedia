@@ -1,5 +1,5 @@
-import Footer from "../footer/footer";
-import HeaderLogado from "../header/headerLogado";
+import Footer from "../Footer/footer";
+import HeaderLogado from "../Header/headerLogado";
 import Image from "next/image";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";

@@ -1,8 +1,7 @@
-import type { NextPage } from 'next'
 import "bootstrap/dist/css/bootstrap.css";
-import PageSobre from '../../ui/components/sobre';
+import PageSobre from '../../ui/components/Sobre';
 
-const Sobre: NextPage = () => {
+const Sobre = () => {
     return (
      <>   
         <PageSobre/>

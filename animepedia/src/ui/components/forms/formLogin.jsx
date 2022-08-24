@@ -1,8 +1,8 @@
 //Components
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
-import Footer from "../footer/footer";
-import HeaderLogin from "../header/headerLogin";
+import Footer from "../Footer/footer";
+import HeaderLogin from "../Header/headerLogin";
 
 //Services
 import { useState } from "react";

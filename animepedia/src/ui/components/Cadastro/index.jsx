@@ -2,8 +2,8 @@ import Button from "react-bootstrap/Button";
 import Col from "react-bootstrap/Col";
 import Form from "react-bootstrap/Form";
 import Row from "react-bootstrap/Row";
-import Footer from "../footer/footer";
-import HeaderLogin from "../header/headerLogin";
+import Footer from "../Footer/footer";
+import HeaderLogin from "../Header/headerLogin";
 import { useForm } from "react-hook-form";
 import { ApiService } from "../../../data/services/ApiService";
 

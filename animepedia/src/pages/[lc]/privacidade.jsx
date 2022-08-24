@@ -1,8 +1,7 @@
-import type { NextPage } from 'next'
 import "bootstrap/dist/css/bootstrap.css";
-import PoliticaPrivacidade from '../../ui/components/privacidade';
+import PoliticaPrivacidade from '../../ui/components/Privacidade';
 
-const Privacidade: NextPage = () => {
+const Privacidade = () => {
     return (
      <>   
         <PoliticaPrivacidade/>

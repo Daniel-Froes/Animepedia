@@ -1,9 +1,9 @@
-import Header from "../header/header";
+import Header from "../Header/header";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Form from 'react-bootstrap/Form';
-import Footer from "../footer/footer";
+import Footer from "../Footer/footer";
 import Button from 'react-bootstrap/Button';
 
 function Anime() {
