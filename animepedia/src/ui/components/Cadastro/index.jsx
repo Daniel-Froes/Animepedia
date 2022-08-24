@@ -4,8 +4,42 @@ import Form from "react-bootstrap/Form";
 import Row from "react-bootstrap/Row";
 import Footer from "../footer/footer";
 import HeaderLogin from "../header/headerLogin";
+import { useForm } from "react-hook-form";
+import { ApiService } from "../../../data/services/ApiService";
 
 function FormCadastro() {
+  const {
+    register,
+    formState: { errors },
+    handleSubmit,
+  } = useForm({
+    defaultValues: {},
+    mode: "onBlur",
+  });
+
+  const onSubmit = (data) => {
+    const dados = {
+      nome: data.nome,
+      nickname: data.nickname,
+      email: data.email,
+      senha: data.password,
+      confirma_senha: data.confirm_password,
+      status: true,
+    };
+
+    ApiService(`usuarios`, {
+      method: "POST",
+      body: dados,
+    })
+      .then((res) => {
+        if (res.status === 200) {
+        }
+      })
+      .catch((err) => {
+        console.log(err.response.data);
+      });
+  };
+
   return (
     <>
       <HeaderLogin />
@@ -14,12 +48,24 @@ function FormCadastro() {
           <Row className="mb-3">
             <Form.Group as={Col} controlId="formGridEmail">
               <Form.Label>Nome Completo</Form.Label>
-              <Form.Control type="text" placeholder="Seu nome" />
+              <Form.Control
+                type="text"
+                {...register("nome", {
+                  required: "Nome obrigatório",
+                })}
+                placeholder="Seu nome"
+              />
             </Form.Group>
 
             <Form.Group as={Col} controlId="formGridPassword">
               <Form.Label>Nome de usuário</Form.Label>
-              <Form.Control type="text" placeholder="@bananinhaTitanica" />
+              <Form.Control
+                type="text"
+                {...register("nickname", {
+                  required: "nickname obrigatório",
+                })}
+                placeholder="@bananinhaTitanica"
+              />
             </Form.Group>
           </Row>
           <Row className="mb-3">
@@ -59,7 +105,7 @@ function FormCadastro() {
             <Form.Control type="file" />
           </Form.Group>
           <div className="botao-centralizado">
-            <Button  variant="outline-light" type="submit">
+            <Button variant="outline-light" type="submit">
               Registrar
             </Button>
           </div>

@@ -15,6 +15,6 @@
     "jsx": "preserve",
     "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/ui/components/forms/formLogin.jsx", "src/data/services/ApiService.jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/ui/components/forms/formLogin.jsx", "src/data/services/ApiService.jsx", "src/ui/components/Cadastro/index.jsx"],
   "exclude": ["node_modules"]
 }
