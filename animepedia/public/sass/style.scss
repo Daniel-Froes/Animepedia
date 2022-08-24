@@ -1,0 +1,32 @@
+@import '../sass/_custom_colors.scss';
+
+.first-container{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    margin-left: 15px;
+}
+
+.text-container{
+    font-size: 20px;
+}
+
+
+.icon-container{
+    width: 30px;
+    height: 25px;
+}
+
+.container-post{
+    background-color: $form-color-second !important;
+    border-radius: 10px;
+}
+
+.botao-post{
+    display: flex;
+    margin: 0 auto;
+}
+
+.titulo-users{
+    font-size: 25px;
+}
