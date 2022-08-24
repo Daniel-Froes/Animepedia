@@ -38,7 +38,7 @@ function CriarPost() {
 
   return (
     <>
-      <Form>
+      <Form onSubmit={handleSubmit}>
         <Row className="mb-3">
           <Form.Group as={Col} controlId="formGridEmail">
             <Form.Label>Título</Form.Label>
