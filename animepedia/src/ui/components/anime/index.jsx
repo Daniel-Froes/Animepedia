@@ -6,12 +6,13 @@ import Form from 'react-bootstrap/Form';
 import Footer from "../Footer/footer";
 import Button from 'react-bootstrap/Button';
 import { useState, useEffect } from 'react';
+import { ApiService } from "../../../data/services/ApiService";
 
 function Anime() {
   const [animes, setAnimes] = useState([]);
 
     useEffect(() => {
-        httpRequest(`descricao/${id}`, {
+        ApiService(`descricao/1`, {
           method: "GET",
         }).then((data) => {
           console.log(data);

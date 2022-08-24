@@ -6,12 +6,13 @@ import Form from 'react-bootstrap/Form';
 import Footer from "../footer/footer";
 import Button from 'react-bootstrap/Button';
 import { useState, useEffect } from 'react';
+import { ApiService } from "../../../data/services/ApiService";
 
 function Manga() {
   const [mangas, setMangas] = useState([]);
 
     useEffect(() => {
-        httpRequest(`descricao/${id}`, {
+        ApiService(`descricao/1`, {
           method: "GET",
         }).then((data) => {
           console.log(data);
@@ -39,7 +40,7 @@ function Manga() {
           </Col>
         </Row>
         ))}
-        >
+        
         <Form>
           
       <Form.Group className="mb-3 mt-5" controlId="exampleForm.ControlTextarea1" >
