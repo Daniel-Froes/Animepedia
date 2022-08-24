@@ -2,12 +2,13 @@ import Header from "../header/header";
 import Footer from "../footer/footer";
 import SliderNews from "../index/sliderNews";
 import { useState, useEffect } from 'react';
+import { ApiService } from "../../../data/services/ApiService";
 
 function Generos(){
     const [generos, setGeneros] = useState([]);
 
     useEffect(() => {
-        httpRequest("api/v1/questoes", {
+        ApiService(`descricao/1`, {
           method: "GET",
         }).then((data) => {
           console.log(data);
