@@ -19,7 +19,7 @@ function FormLogin () {
       email: email,
       password: senha,
     };
-    ApiService(`api/v1/usuarios/login`, {
+    ApiService(`usuarios/login`, {
       method: "POST",
       body: dados,
     })
