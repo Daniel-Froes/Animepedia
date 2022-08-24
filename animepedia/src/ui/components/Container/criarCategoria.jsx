@@ -46,7 +46,7 @@ function CriarAnime() {
 
   return (
     <>
-         <Form onSubmit={handleSubmit}>
+         <Form onSubmit={handleSubmit} enctype="multipart/form-data">
             <Row className="mb-3">
               <Form.Group as={Col} controlId="formGridEmail">
                 <Form.Label>Título</Form.Label>
@@ -163,6 +163,7 @@ function CriarAnime() {
                 <Form.Label>Selecione uma imagem</Form.Label>
                 <Form.Control 
                 type="file" 
+                name="banner"
                 {...register("image", {
                     required: "Imagem obrigatória",
                   })}/>

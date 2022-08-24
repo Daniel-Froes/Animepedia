@@ -38,7 +38,7 @@ function CriarPost() {
 
   return (
     <>
-      <Form onSubmit={handleSubmit}>
+      <Form onSubmit={handleSubmit} enctype="multipart/form-data">
         <Row className="mb-3">
           <Form.Group as={Col} controlId="formGridEmail">
             <Form.Label>Título</Form.Label>
@@ -80,6 +80,7 @@ function CriarPost() {
             <Form.Label>Selecione uma imagem</Form.Label>
             <Form.Control
               type="file"
+              name="fotoNoticia"
               {...register("image", {
                 required: "Imagem obrigatório",
               })}

@@ -45,7 +45,7 @@ function FormCadastro() {
     <>
       <HeaderLogin />
       <main className="login-container">
-        <Form className="mt-5 mb-5" onSubmit={handleSubmit}>
+        <Form className="mt-5 mb-5" onSubmit={handleSubmit} enctype="multipart/form-data">
           <Row className="mb-3">
             <Form.Group as={Col} controlId="formGridEmail">
               <Form.Label>Nome Completo</Form.Label>
@@ -125,6 +125,7 @@ function FormCadastro() {
             <Form.Label>Selecione sua imagem de perfil</Form.Label>
             <Form.Control 
             type="file"
+            name="avatar"
             {...register("image", {
               required: "Imagem obrigatória",
             })}
