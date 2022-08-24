@@ -1,8 +1,20 @@
 import Header from "../header/header";
 import Footer from "../footer/footer";
 import SliderNews from "../index/sliderNews";
+import { useState, useEffect } from 'react';
 
 function Generos(){
+    const [generos, setGeneros] = useState([]);
+
+    useEffect(() => {
+        httpRequest("api/v1/questoes", {
+          method: "GET",
+        }).then((data) => {
+          console.log(data);
+          setGeneros(data.body);
+        });
+      }, [""]);
+
     return (
         <>
             <Header />

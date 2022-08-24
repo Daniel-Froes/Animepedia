@@ -21,17 +21,17 @@ function CriarAnime() {
       titulo: data.titulo,
       subtitulo: data.subtitulo,
       categoria: data.categoria,
-      data_lancamento: data.date,
+      data: data.data,
       autor: data.autor,
       duracao: data.duracao,
       genero: data.genero,
-      onde_assistir: data.assistir,
+      ondeAssistir: data.ondeAssistir,
       comentario: data.comentario,
       image: data.image,
       status: data.status,
     };
 
-    ApiService(`usuarios`, {
+    ApiService(`descricao`, {
       method: "POST",
       body: dados,
     })

@@ -5,27 +5,41 @@ import Col from "react-bootstrap/Col";
 import Form from 'react-bootstrap/Form';
 import Footer from "../Footer/footer";
 import Button from 'react-bootstrap/Button';
+import { useState, useEffect } from 'react';
 
 function Anime() {
+  const [animes, setAnimes] = useState([]);
+
+    useEffect(() => {
+        httpRequest(`descricao/${id}`, {
+          method: "GET",
+        }).then((data) => {
+          console.log(data);
+          setAnimes(data.body);
+        });
+      }, [""]);
+
   return (
     <>
       <Header />
       <Container className="mt-5">
-        <Row>
+        {animes.map((anime) => (
+          <Row>
           <Col> <img src= "/images/snk.jpg" className="img-anime"/> </Col>
           <Col xs={6} >
-            <h2 className="text-anime">Attack on Titan</h2>
-            <p className="text-anime">Shingeki no Kyojin</p>
-            <p className="text-anime">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta fugiat totam cum omnis quos necessitatibus! Reprehenderit in nisi earum esse excepturi architecto sed, maiores, molestias fuga repellendus quaerat obcaecati nam? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta fugiat totam cum omnis quos necessitatibus! Reprehenderit in nisi earum esse excepturi architecto sed, maiores, molestias fuga repellendus quaerat obcaecati nam? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta fugiat totam cum omnis quos necessitatibus! Reprehenderit in nisi earum esse excepturi architecto sed, maiores, molestias fuga repellendus quaerat obcaecati nam? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta fugiat totam cum omnis quos necessitatibus! Reprehenderit in nisi earum esse excepturi architecto sed, maiores, molestias fuga repellendus quaerat obcaecati nam? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta fugiat totam cum omnis quos necessitatibus! Reprehenderit in nisi earum esse excepturi architecto sed, maiores</p>
-            <p className="text-anime">Autor:</p>          
-            <p className="text-anime">Gênero:</p>          
-            <p className="text-anime" >Data de Lançamento:</p>          
-            <p className="text-anime">Status:</p>          
-            <p className="text-anime">Duração:</p>          
-            <p className="text-anime">Popularidade:</p>          
-            <p className="text-anime">Onde Assistir:</p>          
+            <h2 className="text-anime">{anime.titulo}</h2>
+            <p className="text-anime">{anime.subtitulo}</p>
+            <p className="text-anime">{anime.comentario}</p>
+            <p className="text-anime">{anime.autor}:</p>          
+            <p className="text-anime">{anime.genero}:</p>          
+            <p className="text-anime" >{anime.data}:</p>          
+            <p className="text-anime">{anime.status}:</p>          
+            <p className="text-anime">{anime.duracao}:</p>                   
+            <p className="text-anime">{anime.ondeAssistir}:</p>          
           </Col>
         </Row>
+        ))}
+        
         <Form>
           
       <Form.Group className="mb-3 mt-5" controlId="exampleForm.ControlTextarea1" >
