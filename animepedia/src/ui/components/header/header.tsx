@@ -42,11 +42,11 @@ function Header() {
                   <NavDropdown.Item href="#action6">Ver tudo</NavDropdown.Item>
                 </NavDropdown>
                 <NavDropdown title="Mangá" menuVariant="dark" id="navbarScrollingDropdown">
-                  <NavDropdown.Item href="#action3">Populares</NavDropdown.Item>
-                  <NavDropdown.Item href="#action4">
+                  <NavDropdown.Item href="/n/popularesManga">Populares</NavDropdown.Item>
+                  <NavDropdown.Item href="/n/lancamentoManga">
                     Lançamentos
                   </NavDropdown.Item>
-                  <NavDropdown.Item href="#action5">Gêneros</NavDropdown.Item>
+                  <NavDropdown.Item href="/n/generoManga">Gêneros</NavDropdown.Item>
                   <NavDropdown.Item href="#action6">Ver tudo</NavDropdown.Item>
                 </NavDropdown>
                 <Nav.Link href="/n/contato">Contato</Nav.Link>
