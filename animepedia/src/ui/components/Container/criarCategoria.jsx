@@ -28,7 +28,7 @@ function CriarAnime() {
       onde_assistir: data.assistir,
       comentario: data.comentario,
       image: data.image,
-      status: true,
+      status: data.status,
     };
 
     ApiService(`usuarios`, {
@@ -46,7 +46,7 @@ function CriarAnime() {
 
   return (
     <>
-         <Form>
+         <Form onSubmit={handleSubmit}>
             <Row className="mb-3">
               <Form.Group as={Col} controlId="formGridEmail">
                 <Form.Label>Título</Form.Label>
@@ -106,8 +106,8 @@ function CriarAnime() {
                 <Form.Label>Status</Form.Label>
                 <Form.Control 
                 type="text" 
-                {...register("categoria", {
-                    required: "Categoria obrigatório",
+                {...register("status", {
+                    required: "Status obrigatório",
                   })}
                   />
               </Form.Group>

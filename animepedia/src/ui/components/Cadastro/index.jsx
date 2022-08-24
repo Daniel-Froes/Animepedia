@@ -26,7 +26,6 @@ function FormCadastro() {
       senha: data.password,
       image: data.image,
       confirma_senha: data.confirm_password,
-      status: true,
     };
 
     ApiService(`usuarios`, {
@@ -46,7 +45,7 @@ function FormCadastro() {
     <>
       <HeaderLogin />
       <main className="login-container">
-        <Form className="mt-5 mb-5">
+        <Form className="mt-5 mb-5" onSubmit={handleSubmit}>
           <Row className="mb-3">
             <Form.Group as={Col} controlId="formGridEmail">
               <Form.Label>Nome Completo</Form.Label>

@@ -34,11 +34,11 @@ function Header() {
                 navbarScroll
               >
                 <NavDropdown  title="Anime" menuVariant="dark" id="navbarScrollingDropdown" >
-                  <NavDropdown.Item href="#action3">Populares</NavDropdown.Item>
-                  <NavDropdown.Item href="#action4">
+                  <NavDropdown.Item href="/n/populares">Populares</NavDropdown.Item>
+                  <NavDropdown.Item href="/n/lancamento">
                     Lançamentos
                   </NavDropdown.Item>
-                  <NavDropdown.Item href="#action5">Gêneros</NavDropdown.Item>
+                  <NavDropdown.Item href="/n/generos">Gêneros</NavDropdown.Item>
                   <NavDropdown.Item href="#action6">Ver tudo</NavDropdown.Item>
                 </NavDropdown>
                 <NavDropdown title="Mangá" menuVariant="dark" id="navbarScrollingDropdown">
