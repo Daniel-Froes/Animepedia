@@ -24,7 +24,7 @@ function EditarPerfil() {
         <div>
           <h3 className="text-center">Editar Perfil</h3>
           <Container className="login-container">
-          <Form className="mt-5 mb-5">
+          <Form className="mt-5 mb-5" enctype="multipart/form-data">
           <Row className="mb-3">
             <Form.Group controlId="formGridPassword">
               <Form.Label>Atualizar nickname</Form.Label>
@@ -54,7 +54,7 @@ function EditarPerfil() {
 
           <Form.Group controlId="formFile" className="mt-3 mb-5">
             <Form.Label>Atualizar imagem de perfil</Form.Label>
-            <Form.Control type="file" />
+            <Form.Control type="file" name="avatar"/>
           </Form.Group>
           <div className="botao-centralizado">
             <Button  variant="outline-light" type="submit">
