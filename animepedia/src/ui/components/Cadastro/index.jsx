@@ -22,7 +22,9 @@ function FormCadastro() {
       nome: data.nome,
       nickname: data.nickname,
       email: data.email,
+      genero: data.genero,
       senha: data.password,
+      image: data.image,
       confirma_senha: data.confirm_password,
       status: true,
     };
@@ -71,12 +73,22 @@ function FormCadastro() {
           <Row className="mb-3">
             <Form.Group as={Col} controlId="formGridEmail">
               <Form.Label>Email</Form.Label>
-              <Form.Control type="email" placeholder="Seu email" />
+              <Form.Control 
+              type="email" 
+              {...register("email", {
+                required: "Email obrigatório",
+              })}
+              placeholder="Seu email" />
             </Form.Group>
 
             <Form.Group as={Col} controlId="formGridState">
               <Form.Label>Gênero</Form.Label>
-              <Form.Select defaultValue="Choose...">
+              <Form.Select 
+              defaultValue="Choose..."
+              {...register("genero", {
+                required: "Gênero obrigatório",
+              })}
+              >
                 <option>Feminino</option>
                 <option>Masculino</option>
                 <option>Não-binário</option>
@@ -88,7 +100,12 @@ function FormCadastro() {
 
           <Form.Group controlId="formGridPassword">
             <Form.Label>Senha</Form.Label>
-            <Form.Control type="password" placeholder="Senha" />
+            <Form.Control 
+            type="password" 
+            {...register("senha", {
+              required: "Senha obrigatória",
+            })}
+            placeholder="Senha" />
             <Form.Text className="text-muted">
               Sua senha deve ter de 6 a 20 caracteres, conter letras e números e
               não deve conter espacços, caracteres especiais ou emojis.
@@ -97,12 +114,22 @@ function FormCadastro() {
 
           <Form.Group controlId="formGridPassword" className="mt-3">
             <Form.Label>Confirme sua senha</Form.Label>
-            <Form.Control type="password" placeholder="Senha" />
+            <Form.Control 
+            type="password" 
+            {...register("confirma_senha", {
+              required: "Senha obrigatória",
+            })}
+            placeholder="Senha" />
           </Form.Group>
 
           <Form.Group controlId="formFile" className="mt-3 mb-5">
             <Form.Label>Selecione sua imagem de perfil</Form.Label>
-            <Form.Control type="file" />
+            <Form.Control 
+            type="file"
+            {...register("image", {
+              required: "Imagem obrigatória",
+            })}
+            />
           </Form.Group>
           <div className="botao-centralizado">
             <Button variant="outline-light" type="submit">
