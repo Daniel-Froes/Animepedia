@@ -151,3 +151,21 @@ footer {
   transform: scale(0.9);
   cursor: pointer;
 }
+
+.container-posts{
+  background-color: $primary-color !important;
+  border-radius: 5px;
+}
+
+.post-template{
+  margin: 50px 80px 80px 80px;
+}
+
+.img-post{
+  margin: auto;
+  display: block;
+}
+
+.p-posts{
+  font-size: 20px;
+}
